@@ -12,7 +12,7 @@ export default function Component() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center border-b border-[#333] bg-[#1a1a1a] text-white">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <img src="./images/logo.jpeg" alt="Tennora Logo" width={24} height={24} className="h-6 w-6" />
+          <img src="../images/logo.jpeg" alt="Tennora Logo" width={24} height={24} className="h-6 w-6" />
           <span className="sr-only">Tennora</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
