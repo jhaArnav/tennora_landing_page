@@ -26,7 +26,7 @@ export default function Component() {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
-            href="#"
+            href="#features"
             className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
             prefetch={false}
           >
@@ -47,7 +47,7 @@ export default function Component() {
             About
           </Link>
           <Link
-            href="#"
+            href="#contact"
             className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
             prefetch={false}
           >
@@ -71,14 +71,14 @@ export default function Component() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link
-                    href="#"
+                    href="#contact"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-[#0070f3] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#0059c2] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     Get Started
                   </Link>
                   <Link
-                    href="#"
+                    href="#features"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-[#333] bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-[#333] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
@@ -94,7 +94,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col items-center w-full py-12 md:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <section id="features" className="flex flex-col items-center w-full py-12 md:py-24 lg:py-32 bg-[#1a1a1a] text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="flex flex-col items-center space-y-2">
@@ -218,7 +218,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
