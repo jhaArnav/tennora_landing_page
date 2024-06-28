@@ -3,16 +3,25 @@
  * @see https://v0.dev/t/GUTcjv4BuMf
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Input } from "./ui/input"
-import { Button } from "./ui/button"
+import Link from "next/link";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
+import logo from "../pictures/logo.png";
+import icon from "../pictures/icon.png";
+import listingImg from "../pictures/listing.jpeg";
+import workflowsImg from "../pictures/workflows.jpeg";
+import emailChainImg from "../pictures/emailChain.jpeg";
+import paperworkImg from "../pictures/paperwork.jpeg";
+import financialImg from "../pictures/financial.jpeg";
+import advertisementImg from "../pictures/advertisement.jpeg";
 
 export default function Component() {
+  console.log(logo);
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center border-b border-[#333] bg-[#1a1a1a] text-white">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-        <img src="/pictures/logo.png" alt="Tennora Logo" width={24} height={24} className="h-6 w-6" />
+        <img src={icon.src} alt="Tennora Logo" width={36} height={36} className="h-9 w-9" />
           <span className="sr-only">Tennora</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -78,7 +87,7 @@ export default function Component() {
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src={logo.src}
                 width="650"
                 height="650"
                 alt="Hero"
@@ -103,7 +112,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src={workflowsImg.src}
                 width="550"
                 height="310"
                 alt="Automated Workflows"
@@ -130,7 +139,7 @@ export default function Component() {
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src={listingImg.src}
                 width="550"
                 height="310"
                 alt="Intelligent Listing Generation"
@@ -139,7 +148,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src={emailChainImg.src}
                 width="550"
                 height="310"
                 alt="Communication Automation"
@@ -166,7 +175,7 @@ export default function Component() {
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src={paperworkImg.src}
                 width="550"
                 height="310"
                 alt="Paperwork Management"
@@ -175,7 +184,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src="/placeholder.svg"
+                src={advertisementImg.src}
                 width="550"
                 height="310"
                 alt="Ad Campaign Integration"
@@ -202,7 +211,7 @@ export default function Component() {
                 </div>
               </div>
               <img
-                src="/placeholder.svg"
+                src={financialImg.src}
                 width="550"
                 height="310"
                 alt="Financial Reporting"
