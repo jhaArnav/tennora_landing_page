@@ -21,7 +21,7 @@ export default function Component() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="absolute w-full px-4 lg:px-6 h-14 flex items-center border-b border-[#333] bg-[#1a1a1a] text-white">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-        <img src={icon.src} alt="Tennora Logo" width={36} height={36} className="h-9 w-9" />
+          <img src={icon.src} alt="Tennora Logo" width={36} height={36} className="h-9 w-9" />
           <span className="sr-only">Tennora</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -218,7 +218,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
+        {/* <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
@@ -247,7 +247,38 @@ export default function Component() {
               </p>
             </div>
           </div>
+        </section> */}
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
+          <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6">
+            <div className="space-y-3">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                Ready to Streamline Your Real Estate Business?
+              </h2>
+              <p className="mx-auto max-w-[600px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Sign up for Tennora and experience the power of AI-driven real estate tools.
+              </p>
+            </div>
+            <div className="mx-auto w-full max-w-sm space-y-2">
+              <form className="flex gap-2 w-full justify-center">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="max-w-lg flex-1 bg-[#555] border-[#555] text-white placeholder:text-[#ccc]"
+                />
+                <Button type="submit" className="bg-[#0070f3] text-white hover:bg-[#0059c2]">
+                  Get Started
+                </Button>
+              </form>
+              <p className="text-xs text-[#ccc]">
+                Sign up to get started with Tennora.{" "}
+                <Link href="#" className="underline underline-offset-2" prefetch={false}>
+                  Terms &amp; Conditions
+                </Link>
+              </p>
+            </div>
+          </div>
         </section>
+
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#555] bg-[#1a1a1a] text-white">
         <p className="text-xs text-[#ccc]">&copy; 2024 Tennora. All rights reserved.</p>
