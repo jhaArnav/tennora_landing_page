@@ -3,11 +3,12 @@
  * @see https://v0.dev/t/GUTcjv4BuMf
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import NavBar from "./navBar";
+import Link from "next/link";
+
 import logo from "../pictures/logo.png";
-import icon from "../pictures/icon.png";
 import listingImg from "../pictures/listing.jpeg";
 import workflowsImg from "../pictures/workflows.jpeg";
 import emailChainImg from "../pictures/emailChain.jpeg";
@@ -16,48 +17,12 @@ import financialImg from "../pictures/financial.jpeg";
 import advertisementImg from "../pictures/advertisement.jpeg";
 
 export default function Component() {
-  console.log(logo);
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-[#333] bg-[#1a1a1a] text-white">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-        <img src={icon.src} alt="Tennora Logo" width={36} height={36} className="h-9 w-9" />
-          <span className="sr-only">Tennora</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
-            prefetch={false}
-          >
-            Features
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
-            prefetch={false}
-          >
-            Pricing
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
-      <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white">
-          <div className="container px-4 md:px-6">
+      <NavBar/>
+      <main className="flex-1 flex-col items-center justify-center">
+        <section className="flex flex-row justify-center items-center pt-14 w-full h-[100vh] bg-white">
+          <div className="container px-6 md:px-9">
             <div className="grid gap-6 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
