@@ -13,6 +13,7 @@ import house2Img from './pictures/house2.png';
 import house3Img from './pictures/house3.jpg';
 import house4Img from './pictures/house4.jpg';
 import house5Img from './pictures/house5.webp';
+import image5Img from './pictures/image5.webp';
 
 export default function Component() {
   return (
@@ -85,7 +86,7 @@ export default function Component() {
               <div className="bg-yellow-500 px-2 py-1 rounded-md text-white font-bold">Showings in Progress</div>
             </div>
             <img
-              src={house2Img.src}
+              src={image5Img.src}
               alt="Home Image"
               width={500}
               height={400}
