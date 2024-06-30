@@ -14,6 +14,7 @@ import house3Img from './pictures/house3.jpg';
 import house4Img from './pictures/house4.jpg';
 import house5Img from './pictures/house5.webp';
 import image5Img from './pictures/image5.webp';
+import house7img from './pictures/house7.jpeg';
 
 export default function Component() {
   return (
@@ -208,7 +209,7 @@ export default function Component() {
               <div className="bg-green-500 px-2 py-1 rounded-md text-white font-bold">Final Documentation</div>
             </div>
             <img
-              src={house4Img.src}
+              src={house7img.src}
               alt="Home Image"
               width={500}
               height={400}
