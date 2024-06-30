@@ -2,7 +2,10 @@ import React from 'react';
 import icon from "../../../pictures/icon.png";
 import NavButton from './navButton';
 
-const NavBar = () => {
+import ListingsPage from '../listingsPage/body';
+import LeadsPage from '../leadsPage/body';
+
+const NavBar = ({ router }: {router?: (x: any)=>void}) => {
   return (
     <div className="flex justify-between items-center bg-black">
       <div className="cursor-pointer">

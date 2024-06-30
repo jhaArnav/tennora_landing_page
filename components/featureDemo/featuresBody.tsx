@@ -1,8 +1,12 @@
 import NavBar from './navBar/navBar';
 import LandingNavBar from '../navBar';
-import Body from './listingsPage/body';
+
+import ListingsPage from './listingsPage/body';
+import LeadsPage from './leadsPage/body';
+import { useState } from 'react';
 
 export default function FeaturesBody() {
+    const [page, setPage] = useState<any | null>(LeadsPage);
     return (
         <div>
             <LandingNavBar/>
@@ -10,7 +14,7 @@ export default function FeaturesBody() {
                 <div className="rounded-2xl border-black border-solid w-full h-full overflow-hidden shadow-xl">
                     <NavBar/>
                     <div className="w-full h-full overflow-scroll">
-                        <Body/>
+                        <LeadsPage/>
                     </div>
                 </div>
             </div>
