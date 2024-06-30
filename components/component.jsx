@@ -24,7 +24,7 @@ export default function Component() {
         <section className="flex flex-row justify-center items-center pt-14 w-full h-[100vh] bg-white">
           <div className="container px-6 md:px-9">
             <div className="grid gap-6 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_650px]">
-              <div className="flex flex-col justify-center space-y-4">
+              <div className="flex flex-col justify-center space-y-4 sm:items-center sm:text-center lg:text-left lg:items-start">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Streamline Your Real Estate Business with Tennora
@@ -36,14 +36,14 @@ export default function Component() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link
-                    href="#"
+                    href="#contact"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-[#0070f3] px-8 text-sm font-medium text-white shadow transition-colors hover:bg-[#0059c2] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     Get Started
                   </Link>
                   <Link
-                    href="#"
+                    href="#features"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-[#333] bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-[#333] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
@@ -53,18 +53,16 @@ export default function Component() {
               </div>
               <img
                 src={logo.src}
-                width="650"
-                height="650"
                 alt="Hero"
-                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+                className="mx-auto aspect-square overflow-hidden object-cover rounded-xl lg:w-[75vh] sm:w-[50vh]" // " "
               />
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#1a1a1a] text-white">
+        <section id="features" className="flex flex-col items-center w-full py-12 md:py-24 lg:py-32 bg-[#1a1a1a] text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="flex flex-col items-center space-y-2">
                 <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Unlock the Power of AI in Your Real Estate Business
@@ -87,29 +85,29 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Automated Workflows</h3>
                   <p className="text-[#ccc]">
-                    Tennora\'s AI-powered automation streamlines your daily tasks, from lead management to client
+                    Tennora's AI-powered automation streamlines your daily tasks, from lead management to client
                     communication and paperwork processing.
                   </p>
                 </div>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>
-                  <p className="text-[#ccc]">
-                    Tennora\'s AI analyzes market data and your client\'s preferences to generate personalized,
-                    high-performing listing content.
-                  </p>
-                </div>
-              </div>
               <img
                 src={listingImg.src}
                 width="550"
                 height="310"
                 alt="Intelligent Listing Generation"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="grid gap-1">
+                  <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>
+                  <p className="text-[#ccc]">
+                    Tennora's AI analyzes market data and your client's preferences to generate personalized,
+                    high-performing listing content.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
@@ -123,13 +121,20 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Communication Automation</h3>
                   <p className="text-[#ccc]">
-                    Tennora\'s AI-powered communication tools help you stay connected with clients, analyze
+                    Tennora's AI-powered communication tools help you stay connected with clients, analyze
                     conversations, and automate personalized outreach.
                   </p>
                 </div>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <img
+                src={paperworkImg.src}
+                width="550"
+                height="310"
+                alt="Paperwork Management"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Paperwork Management</h3>
@@ -139,13 +144,6 @@ export default function Component() {
                   </p>
                 </div>
               </div>
-              <img
-                src={paperworkImg.src}
-                width="550"
-                height="310"
-                alt="Paperwork Management"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-              />
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
@@ -166,55 +164,54 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Financial Reporting</h3>
-                  <p className="text-[#ccc]">
-                    Tennora\'s AI-powered financial reporting tools provide you with real-time insights into your
-                    business performance, helping you make informed decisions.
-                  </p>
-                </div>
-              </div>
               <img
                 src={financialImg.src}
                 width="550"
                 height="310"
                 alt="Financial Reporting"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="grid gap-1">
+                  <h3 className="text-xl font-bold">Financial Reporting</h3>
+                  <p className="text-[#ccc]">
+                    Tennora's AI-powered financial reporting tools provide you with real-time insights into your
+                    business performance, helping you make informed decisions.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
+          <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl lg:text-tight">
                 Ready to Streamline Your Real Estate Business?
               </h2>
-              <p className="mx-auto max-w-[600px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-[#ccc] md:text-xl lg:text-base xl:text-xl">
                 Sign up for Tennora and experience the power of AI-driven real estate tools.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
-              <form className="flex gap-2">
-                <Input
+              <form className="flex gap-2 w-full justify-center">
+                <input
                   type="email"
                   placeholder="Enter your email"
-                  className="max-w-lg flex-1 bg-[#555] border-[#555] text-white placeholder:text-[#ccc]"
+                  className="max-w-lg flex-1 bg-[#555] border-[#555] text-white placeholder:text-[#ccc] px-4 py-2"
                 />
-                <Button type="submit" className="bg-[#0070f3] text-white hover:bg-[#0059c2]">
+                <button type="submit" className="bg-[#0070f3] text-white px-4 py-2 hover:bg-[#0059c2]">
                   Get Started
-                </Button>
+                </button>
               </form>
               <p className="text-xs text-[#ccc]">
-                Sign up to get started with Tennora.{" "}
-                <Link href="#" className="underline underline-offset-2" prefetch={false}>
-                  Terms &amp; Conditions
-                </Link>
+                Sign up to get started with Tennora. <a href="#" className="underline underline-offset-2">Terms &amp; Conditions</a>
               </p>
             </div>
           </div>
         </section>
+
+
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#555] bg-[#1a1a1a] text-white">
         <p className="text-xs text-[#ccc]">&copy; 2024 Tennora. All rights reserved.</p>
