@@ -6,19 +6,30 @@ import LeadsPage from './leadsPage/body';
 import { useState } from 'react';
 
 export default function FeaturesBody() {
-    const [page, setPage] = useState<any | null>(LeadsPage);
+    const [page, setPage] = useState<any | null>("leads");
     return (
         <div>
             <LandingNavBar/>
             <div className="p-10 pt-24 h-[60vw] bg-gray-200">
                 <div className="rounded-2xl border-black border-solid w-full h-full overflow-hidden shadow-xl">
-                    <NavBar/>
+                    <NavBar router={setPage}/>
                     <div className="w-full h-full overflow-scroll">
-                        <LeadsPage/>
+                        {renderSwitch(page)}
                     </div>
                 </div>
             </div>
         </div>
         
     );
+}
+
+function renderSwitch(param: string) {
+    switch (param) {
+        case 'listings':
+            return <ListingsPage/>
+        case 'leads':
+            return <LeadsPage/>
+        default:
+            return '404 Not Found'
+    }
 }
