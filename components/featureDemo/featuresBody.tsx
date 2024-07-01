@@ -3,6 +3,7 @@ import LandingNavBar from '../navBar';
 
 import ListingsPage from './listingsPage/body';
 import LeadsPage from './leadsPage/body';
+import DocumentPage from './documentsPage/body';
 import { useState } from 'react';
 
 export default function FeaturesBody() {
@@ -29,6 +30,8 @@ function renderSwitch(param: string) {
             return <ListingsPage/>
         case 'leads':
             return <LeadsPage/>
+        case 'documents':
+            return <DocumentPage/>
         default:
             return '404 Not Found'
     }

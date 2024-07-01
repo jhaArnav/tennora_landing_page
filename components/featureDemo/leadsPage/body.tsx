@@ -6,6 +6,7 @@
 "use client"
 
 import { useState } from "react"
+import { FaUserCircle } from "react-icons/fa";
 
 export default function Component() {
   const [expandedSeller, setExpandedSeller] = useState(null)
@@ -423,7 +424,8 @@ export default function Component() {
               onClick={() => handleExpand(seller.id)}
             >
               <div className="flex items-center space-x-4">
-                <img src="/placeholder.svg" alt={seller.name} width={64} height={64} className="rounded-md" />
+                <FaUserCircle className="w-[64px] h-[64px] rounded-md"/>
+                {/* <img src="/placeholder.svg" alt={seller.name} width={64} height={64} className="rounded-md" /> */}
                 <div>
                   <h3 className="font-semibold text-black">{seller.name}</h3>
                   <p className="text-gray-500">{seller.address}</p>
