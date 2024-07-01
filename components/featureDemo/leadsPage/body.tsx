@@ -415,71 +415,79 @@ export default function Component() {
     setExpandedSeller(expandedSeller === sellerId ? null : sellerId)
   }
   return (
-    <div className="container mx-auto px-4 py-16 bg-black">
-      <div className="space-y-8">
-        {sellers.map((seller) => (
-          <div key={seller.id} className="bg-white rounded-lg shadow-md">
-            <div
-              className="flex items-center justify-between px-4 py-6 cursor-pointer"
-              onClick={() => handleExpand(seller.id)}
-            >
-              <div className="flex items-center space-x-4">
-                <FaUserCircle className="w-[64px] h-[64px] rounded-md"/>
-                {/* <img src="/placeholder.svg" alt={seller.name} width={64} height={64} className="rounded-md" /> */}
-                <div>
-                  <h3 className="font-semibold text-black">{seller.name}</h3>
-                  <p className="text-gray-500">{seller.address}</p>
+    <>
+      <header className="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center">
+        <h1 className="text-xl font-semibold">Leads</h1>
+      </header>
+      <div className="overflow-scroll h-[calc(100%-56px)]">
+        <div className="px-4 py-8 bg-gray-300">
+          <div className="space-y-8">
+            {sellers.map((seller) => (
+              <div key={seller.id} className="bg-white rounded-lg shadow-md">
+                <div
+                  className="flex items-center justify-between px-4 py-6 cursor-pointer"
+                  onClick={() => handleExpand(seller.id)}
+                >
+                  <div className="flex items-center space-x-4">
+                    <FaUserCircle className="w-[64px] h-[64px] rounded-md"/>
+                    {/* <img src="/placeholder.svg" alt={seller.name} width={64} height={64} className="rounded-md" /> */}
+                    <div>
+                      <h3 className="font-semibold text-black">{seller.name}</h3>
+                      <p className="text-gray-500">{seller.address}</p>
+                    </div>
+                  </div>
+                  <SquareChevronDownIcon className="w-6 h-6 text-gray-500" />
                 </div>
+                {expandedSeller === seller.id && (
+                  <div className="border-t border-gray-200 px-4 py-12">
+                    <h4 className="text-lg font-semibold mb-4 text-white">Potential Buyers</h4>
+                    <div className="overflow-x-auto">
+                      <table className="w-full table-auto">
+                        <thead>
+                          <tr className="bg-gray-100 text-gray-500 font-medium">
+                            <th className="px-4 py-2 text-left bg-black text-white">Name</th>
+                            <th className="px-4 py-2 text-left bg-black text-white">Contact</th>
+                            <th className="px-4 py-2 text-left bg-black text-white">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {seller.buyers.map((buyer) => (
+                            <tr key={buyer.id} className="border-b border-gray-200">
+                              <td className="px-4 py-3 text-black">
+                                <div className="flex items-center justify-between">
+                                  <span>{buyer.name}</span>
+                                  <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs">
+                                    Final paperwork
+                                  </span>
+                                </div>
+                                <div className="mt-2 h-2 w-full rounded-full bg-gray-200">
+                                  <div className="h-full rounded-full bg-green-500" style={{ width: "80%" }} />
+                                </div>
+                              </td>
+                              <td className="px-4 py-3 text-black">
+                                <div className="space-y-1">
+                                  <p>{buyer.phone}</p>
+                                  <p>{buyer.email}</p>
+                                </div>
+                              </td>
+                              <td className="px-4 py-3 text-black">
+                                This is a detailed note about the buyer's interests and requirements. The note provides
+                                valuable information to the seller about the buyer's preferences and needs.
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
               </div>
-              <SquareChevronDownIcon className="w-6 h-6 text-gray-500" />
-            </div>
-            {expandedSeller === seller.id && (
-              <div className="border-t border-gray-200 px-4 py-12">
-                <h4 className="text-lg font-semibold mb-4 text-white">Potential Buyers</h4>
-                <div className="overflow-x-auto">
-                  <table className="w-full table-auto">
-                    <thead>
-                      <tr className="bg-gray-100 text-gray-500 font-medium">
-                        <th className="px-4 py-2 text-left bg-black text-white">Name</th>
-                        <th className="px-4 py-2 text-left bg-black text-white">Contact</th>
-                        <th className="px-4 py-2 text-left bg-black text-white">Notes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {seller.buyers.map((buyer) => (
-                        <tr key={buyer.id} className="border-b border-gray-200">
-                          <td className="px-4 py-3 text-black">
-                            <div className="flex items-center justify-between">
-                              <span>{buyer.name}</span>
-                              <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs">
-                                Final paperwork
-                              </span>
-                            </div>
-                            <div className="mt-2 h-2 w-full rounded-full bg-gray-200">
-                              <div className="h-full rounded-full bg-green-500" style={{ width: "80%" }} />
-                            </div>
-                          </td>
-                          <td className="px-4 py-3 text-black">
-                            <div className="space-y-1">
-                              <p>{buyer.phone}</p>
-                              <p>{buyer.email}</p>
-                            </div>
-                          </td>
-                          <td className="px-4 py-3 text-black">
-                            This is a detailed note about the buyer's interests and requirements. The note provides
-                            valuable information to the seller about the buyer's preferences and needs.
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            )}
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+      
+    </>
   )
 }
 

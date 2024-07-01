@@ -11,7 +11,7 @@ const NavBar = ({ router }: {router?: (x: any)=>void}) => {
       <NavButton onClick={()=>{if (router) {router("listings")}}}>LISTINGS</NavButton>
       <NavButton onClick={()=>{if (router) {router("leads")}}}>LEADS</NavButton>
       <NavButton>MARKETING</NavButton>
-      <NavButton>SCHEDULING</NavButton>
+      <NavButton onClick={()=>{if (router) {router("scheduling")}}}>SCHEDULING</NavButton>
       <NavButton onClick={()=>{if (router) {router("documents")}}}>DOCUMENTS</NavButton>
       <NavButton>ACCOUNT</NavButton>
     </div>

@@ -4,6 +4,7 @@ import LandingNavBar from '../navBar';
 import ListingsPage from './listingsPage/body';
 import LeadsPage from './leadsPage/body';
 import DocumentPage from './documentsPage/body';
+import SchedulingPage from './schedulingPage/body';
 import { useState } from 'react';
 
 export default function FeaturesBody() {
@@ -11,10 +12,10 @@ export default function FeaturesBody() {
     return (
         <div>
             <LandingNavBar/>
-            <div className="p-10 pt-24 h-[60vw] bg-gray-200">
+            <div className="p-10 pt-24 h-[60vw] bg-gray-100">
                 <div className="rounded-2xl border-black border-solid w-full h-full overflow-hidden shadow-xl">
                     <NavBar router={setPage}/>
-                    <div className="w-full h-full overflow-scroll">
+                    <div className="w-full h-full">
                         {renderSwitch(page)}
                     </div>
                 </div>
@@ -30,6 +31,8 @@ function renderSwitch(param: string) {
             return <ListingsPage/>
         case 'leads':
             return <LeadsPage/>
+        case 'scheduling':
+            return <SchedulingPage/>
         case 'documents':
             return <DocumentPage/>
         default:
