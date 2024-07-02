@@ -9,7 +9,7 @@ import MarketingPage from './marketingPage/body';
 import { useState } from 'react';
 
 export default function DemoBody() {
-    const [page, setPage] = useState<any | null>("leads");
+    const [page, setPage] = useState<any | null>("listings");
     return (
         <div>
             <LandingNavBar/>
