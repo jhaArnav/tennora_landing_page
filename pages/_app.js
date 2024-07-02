@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Tennora - Streamline Your Real Estate Business</title>
-        <link rel="icon" href="../pictures/icon.png" />
+        <link rel="icon" href="/pictures/icon.png" />
       </Head>
       <Component {...pageProps} />
     </>

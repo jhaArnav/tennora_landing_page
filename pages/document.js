@@ -6,7 +6,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="../pictures/icon.png" />
+          <link rel="icon" href="/pictures/icon.png" />
+          <meta name="description" content="Streamline Your Real Estate Business with Tennora" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
         </Head>
         <body>
           <Main />
