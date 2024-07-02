@@ -18,8 +18,8 @@ import advertisementImg from "../pictures/advertisement.jpeg";
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      <NavBar/>
+    <div className="flex flex-col min-h-[100vh]">
+      <NavBar />
       <main className="flex-1 flex-col items-center justify-center">
         <section className="flex flex-row justify-center items-center pt-14 w-full h-[100vh] bg-white">
           <div className="container px-6 md:px-9">
@@ -54,7 +54,7 @@ export default function Component() {
               <img
                 src={logo.src}
                 alt="Hero"
-                className="mx-auto aspect-square overflow-hidden object-cover rounded-xl lg:w-[75vh] sm:w-[50vh]" // " "
+                className="mx-auto aspect-square overflow-hidden object-cover rounded-xl lg:w-[75vh] sm:w-[50vh]"
               />
             </div>
           </div>
@@ -210,8 +210,6 @@ export default function Component() {
             </div>
           </div>
         </section>
-
-
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#555] bg-[#1a1a1a] text-white">
         <p className="text-xs text-[#ccc]">&copy; 2024 Tennora. All rights reserved.</p>
@@ -225,5 +223,5 @@ export default function Component() {
         </nav>
       </footer>
     </div>
-  )
+  );
 }
