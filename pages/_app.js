@@ -1,17 +1,8 @@
 // pages/_app.js
-import '../app/globals.css';
-import Head from 'next/head';
+import '../app/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <title>Tennora - Streamline Your Real Estate Business</title>
-        <link rel="icon" href="/pictures/icon.png" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  );
+  return <Component {...pageProps} />
 }
 
-export default MyApp;
+export default MyApp
