@@ -20,7 +20,7 @@ export default function Component() {
   return (
     <>
       <header className="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center">
-        <h1 className="text-xl font-semibold">Documents</h1>
+        <h1 className="text-xl font-semibold">Listings</h1>
       </header>
       <div className="flex flex-col h-[calc(100%-56px)]">
       <div className="flex flex-col space-y-6 p-4 sm:p-6 md:p-8 bg-gray-300 overflow-scroll">

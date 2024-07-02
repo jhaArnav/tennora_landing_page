@@ -10,7 +10,7 @@ const NavBar = ({ router }: {router?: (x: any)=>void}) => {
       </div>
       <NavButton onClick={()=>{if (router) {router("listings")}}}>LISTINGS</NavButton>
       <NavButton onClick={()=>{if (router) {router("leads")}}}>LEADS</NavButton>
-      <NavButton>MARKETING</NavButton>
+      <NavButton onClick={()=>{if (router) {router("marketing")}}}>MARKETING</NavButton>
       <NavButton onClick={()=>{if (router) {router("scheduling")}}}>SCHEDULING</NavButton>
       <NavButton onClick={()=>{if (router) {router("documents")}}}>DOCUMENTS</NavButton>
       <NavButton>ACCOUNT</NavButton>
