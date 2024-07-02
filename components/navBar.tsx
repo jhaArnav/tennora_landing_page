@@ -17,11 +17,11 @@ export default function NavBar() {
                     Home
                 </Link>
                 <Link
-                    href="/features"
+                    href="/demo"
                     className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
-                    Features
+                    Demo
                 </Link>
                 <Link
                     href="#"
