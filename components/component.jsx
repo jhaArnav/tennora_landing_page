@@ -22,7 +22,7 @@ export default function Component() {
     <div className="flex flex-col min-h-[100vh]">
       <Head>
         <title>Tennora - Streamline Your Real Estate Business</title>
-        <link rel="icon" href="/pictures/icon.png" />
+        <link rel="icon" href="../pictures/icon.png" />
       </Head>
       <NavBar />
       <main className="flex-1 flex-col items-center justify-center">
