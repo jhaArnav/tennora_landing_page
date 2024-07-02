@@ -7,6 +7,7 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import NavBar from "./navBar";
 import Link from "next/link";
+import Head from "next/head";
 
 import logo from "../pictures/logo.png";
 import listingImg from "../pictures/listing.jpeg";
@@ -19,6 +20,10 @@ import advertisementImg from "../pictures/advertisement.jpeg";
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
+      <Head>
+        <title>Tennora - Streamline Your Real Estate Business</title>
+        <link rel="icon" href="/pictures/icon.png" />
+      </Head>
       <NavBar />
       <main className="flex-1 flex-col items-center justify-center">
         <section className="flex flex-row justify-center items-center pt-14 w-full h-[100vh] bg-white">
