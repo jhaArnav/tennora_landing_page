@@ -11,7 +11,7 @@ export default function Component() {
             </header>
             <div className="overflow-scroll h-[calc(100%-56px)]">
                 <div className="w-full">
-                    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                    <section className="w-full py-8 md:py-12 lg:py-20 bg-muted">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                         <div className="space-y-2">
@@ -26,7 +26,7 @@ export default function Component() {
                         </div>
                     </div>
                     </section>
-                    <section className="w-full py-12 md:py-24 lg:py-32">
+                    <section className="w-full pt-10 pb-8 md:pb-12 lg:pb-16">
                     <div className="container px-4 md:px-6">
                         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
                         <div className="space-y-4">
