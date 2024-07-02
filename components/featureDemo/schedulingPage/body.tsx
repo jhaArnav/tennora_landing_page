@@ -33,7 +33,8 @@ export default function Component() {
           <div className="p-4">
             <img
               src={calendlyImg.src}
-              width={500}
+              width={350}
+              height={350}
               alt="Calendar"
               className="w-full h-full object-cover"
             />
