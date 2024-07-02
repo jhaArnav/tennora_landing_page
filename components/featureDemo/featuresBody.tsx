@@ -5,6 +5,7 @@ import ListingsPage from './listingsPage/body';
 import LeadsPage from './leadsPage/body';
 import DocumentPage from './documentsPage/body';
 import SchedulingPage from './schedulingPage/body';
+import MarketingPage from './marketingPage/body';
 import { useState } from 'react';
 
 export default function FeaturesBody() {
@@ -35,6 +36,8 @@ function renderSwitch(param: string) {
             return <SchedulingPage/>
         case 'documents':
             return <DocumentPage/>
+        case 'marketing':
+            return <MarketingPage/>
         default:
             return '404 Not Found'
     }
