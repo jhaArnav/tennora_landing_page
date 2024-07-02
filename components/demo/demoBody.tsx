@@ -7,9 +7,11 @@ import DocumentPage from './documentsPage/body';
 import SchedulingPage from './schedulingPage/body';
 import MarketingPage from './marketingPage/body';
 import { useState } from 'react';
+import ContactForm from '../contactForm';
+import Footer from '../footer';
 
-export default function FeaturesBody() {
-    const [page, setPage] = useState<any | null>("leads");
+export default function DemoBody() {
+    const [page, setPage] = useState<any | null>("listings");
     return (
         <div>
             <LandingNavBar/>
@@ -21,6 +23,8 @@ export default function FeaturesBody() {
                     </div>
                 </div>
             </div>
+            <ContactForm/>
+            <Footer/>
         </div>
         
     );
