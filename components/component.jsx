@@ -6,6 +6,8 @@
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import NavBar from "./navBar";
+import ContactForm from "./contactForm";
+import Footer from './footer';
 import Link from "next/link";
 
 import logo from "../pictures/logo.png";
@@ -183,45 +185,11 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-[#333] text-white border-t border-[#555]">
-          <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl lg:text-tight">
-                Ready to Streamline Your Real Estate Business?
-              </h2>
-              <p className="mx-auto max-w-[600px] text-[#ccc] md:text-xl lg:text-base xl:text-xl">
-                Sign up for Tennora and experience the power of AI-driven real estate tools.
-              </p>
-            </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
-              <form className="flex gap-2 w-full justify-center">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="max-w-lg flex-1 bg-[#555] border-[#555] text-white placeholder:text-[#ccc] px-4 py-2"
-                />
-                <button type="submit" className="bg-[#0070f3] text-white px-4 py-2 hover:bg-[#0059c2]">
-                  Get Started
-                </button>
-              </form>
-              <p className="text-xs text-[#ccc]">
-                Sign up to get started with Tennora. <a href="#" className="underline underline-offset-2">Terms &amp; Conditions</a>
-              </p>
-            </div>
-          </div>
-        </section>
+        <div id="contact">
+          <ContactForm/>
+        </div>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#555] bg-[#1a1a1a] text-white">
-        <p className="text-xs text-[#ccc]">&copy; 2024 Tennora. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4 text-[#ccc]" prefetch={false}>
-            Privacy
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4 text-[#ccc]" prefetch={false}>
-            Terms of Service
-          </Link>
-        </nav>
-      </footer>
+      <Footer/>
     </div>
   );
 }

@@ -7,6 +7,8 @@ import DocumentPage from './documentsPage/body';
 import SchedulingPage from './schedulingPage/body';
 import MarketingPage from './marketingPage/body';
 import { useState } from 'react';
+import ContactForm from '../contactForm';
+import Footer from '../footer';
 
 export default function DemoBody() {
     const [page, setPage] = useState<any | null>("listings");
@@ -21,6 +23,8 @@ export default function DemoBody() {
                     </div>
                 </div>
             </div>
+            <ContactForm/>
+            <Footer/>
         </div>
         
     );
