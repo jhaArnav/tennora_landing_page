@@ -18,12 +18,12 @@ import house7img from './pictures/house7.jpeg';
 
 export default function Component() {
   return (
-    <>
+    <div className="flex flex-col h-[calc(100%-56px)]">
       <header className="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center">
         <h1 className="text-xl font-semibold">Listings</h1>
       </header>
-      <div className="flex flex-col h-[calc(100%-56px)]">
-      <div className="flex flex-col space-y-6 p-4 sm:p-6 md:p-8 bg-gray-300 overflow-scroll">
+      <div className="flex flex-col flex-1 overflow-scroll">
+      <div className="flex flex-col space-y-6 p-4 sm:p-6 md:p-8 bg-gray-300">
         <div className="grid grid-cols-1 gap-6">
           <Card className="grid grid-cols-[1fr_2fr] rounded-lg shadow-lg">
             <div className="relative overflow-hidden rounded-l-lg">
@@ -333,7 +333,7 @@ export default function Component() {
         </div>
       </div>
     </div>
-    </>
+    </div>
     
   )
 }

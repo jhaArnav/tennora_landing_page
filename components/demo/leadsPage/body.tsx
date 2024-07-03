@@ -7,9 +7,12 @@
 
 import { useState } from "react"
 import { FaUserCircle } from "react-icons/fa";
+import { cn } from "../../../lib/utils";
 
 export default function Component() {
   const [expandedSeller, setExpandedSeller] = useState(null)
+
+  const statuses = ['First Contact', 'Showing', 'Final Paperwork',];
   const sellers = [
     {
       id: 1,
@@ -23,6 +26,7 @@ export default function Component() {
           phone: "555-1234",
           email: "jane@email.com",
           notes: "Interested in 3-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -30,6 +34,7 @@ export default function Component() {
           phone: "555-5678",
           email: "bob@email.com",
           notes: "Looking for a fixer-upper",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -37,6 +42,7 @@ export default function Component() {
           phone: "555-9012",
           email: "sarah@email.com",
           notes: "Preapproved for up to $500k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -44,6 +50,7 @@ export default function Component() {
           phone: "555-3456",
           email: "michael@email.com",
           notes: "First-time home buyer",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -51,6 +58,7 @@ export default function Component() {
           phone: "555-7890",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -58,6 +66,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -65,6 +74,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -80,6 +90,7 @@ export default function Component() {
           phone: "555-3456",
           email: "tom@email.com",
           notes: "First-time home buyer",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -87,6 +98,7 @@ export default function Component() {
           phone: "555-7890",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -94,6 +106,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -101,6 +114,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -108,6 +122,7 @@ export default function Component() {
           phone: "555-8901",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -115,6 +130,7 @@ export default function Component() {
           phone: "555-2345",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -122,6 +138,7 @@ export default function Component() {
           phone: "555-6789",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -137,6 +154,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -144,6 +162,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -151,6 +170,7 @@ export default function Component() {
           phone: "555-8901",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -158,6 +178,7 @@ export default function Component() {
           phone: "555-2345",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -165,6 +186,7 @@ export default function Component() {
           phone: "555-6789",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -172,6 +194,7 @@ export default function Component() {
           phone: "555-3456",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -179,6 +202,7 @@ export default function Component() {
           phone: "555-6543",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -194,6 +218,7 @@ export default function Component() {
           phone: "555-8901",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -201,6 +226,7 @@ export default function Component() {
           phone: "555-2345",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -208,6 +234,7 @@ export default function Component() {
           phone: "555-6789",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)],
         },
         {
           id: 4,
@@ -215,6 +242,7 @@ export default function Component() {
           phone: "555-3456",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)],
         },
         {
           id: 5,
@@ -222,6 +250,7 @@ export default function Component() {
           phone: "555-7890",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -229,6 +258,7 @@ export default function Component() {
           phone: "555-2109",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -236,6 +266,7 @@ export default function Component() {
           phone: "555-1234",
           email: "michael@email.com",
           notes: "First-time home buyer",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -251,6 +282,7 @@ export default function Component() {
           phone: "555-7890",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -258,6 +290,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -265,6 +298,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -272,6 +306,7 @@ export default function Component() {
           phone: "555-8901",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -279,6 +314,7 @@ export default function Component() {
           phone: "555-2345",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -286,6 +322,7 @@ export default function Component() {
           phone: "555-6789",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -293,6 +330,7 @@ export default function Component() {
           phone: "555-9012",
           email: "sarah@email.com",
           notes: "Preapproved for up to $500k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -308,6 +346,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -315,6 +354,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -322,6 +362,7 @@ export default function Component() {
           phone: "555-8901",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -329,6 +370,7 @@ export default function Component() {
           phone: "555-2345",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -336,6 +378,7 @@ export default function Component() {
           phone: "555-6789",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -343,6 +386,7 @@ export default function Component() {
           phone: "555-3456",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -350,6 +394,7 @@ export default function Component() {
           phone: "555-1234",
           email: "michael@email.com",
           notes: "First-time home buyer",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -365,6 +410,7 @@ export default function Component() {
           phone: "555-8901",
           email: "david@email.com",
           notes: "Preapproved for up to $750k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 2,
@@ -372,6 +418,7 @@ export default function Component() {
           phone: "555-2345",
           email: "jessica@email.com",
           notes: "Interested in a condo",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 3,
@@ -379,6 +426,7 @@ export default function Component() {
           phone: "555-6789",
           email: "tom@email.com",
           notes: "Looking for a 2-bedroom home",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 4,
@@ -386,6 +434,7 @@ export default function Component() {
           phone: "555-3456",
           email: "emily@email.com",
           notes: "Relocating for new job",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 5,
@@ -393,6 +442,7 @@ export default function Component() {
           phone: "555-2109",
           email: "alex@email.com",
           notes: "Interested in luxury homes",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 6,
@@ -400,6 +450,7 @@ export default function Component() {
           phone: "555-6543",
           email: "olivia@email.com",
           notes: "Looking for a fenced yard",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
         {
           id: 7,
@@ -407,6 +458,7 @@ export default function Component() {
           phone: "555-9012",
           email: "sarah@email.com",
           notes: "Preapproved for up to $500k",
+          status: statuses[Math.floor(Math.random() * statuses.length)]
         },
       ],
     },
@@ -415,11 +467,11 @@ export default function Component() {
     setExpandedSeller(expandedSeller === sellerId ? null : sellerId)
   }
   return (
-    <>
+    <div className="flex flex-col h-[calc(100%-56px)]">
       <header className="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center">
         <h1 className="text-xl font-semibold">Leads</h1>
       </header>
-      <div className="overflow-scroll h-[calc(100%-56px)]">
+      <div className="overflow-scroll flex-1">
         <div className="px-4 py-8 bg-gray-300">
           <div className="space-y-8">
             {sellers.map((seller) => (
@@ -456,12 +508,21 @@ export default function Component() {
                               <td className="px-4 py-3 text-black">
                                 <div className="flex items-center justify-between">
                                   <span>{buyer.name}</span>
-                                  <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs">
-                                    Final paperwork
+                                  <span className={"text-white px-2 py-1 rounded-full text-xs text-center " + 
+                                    cn(buyer.status=='Sold' && 'bg-blue-500', 
+                                    buyer.status == 'Final Paperwork' && 'bg-green-500', 
+                                    buyer.status=='Showing' && 'bg-yellow-500', 
+                                    buyer.status=='First Contact' && 'bg-red-500')}>
+                                    {buyer.status}
                                   </span>
                                 </div>
                                 <div className="mt-2 h-2 w-full rounded-full bg-gray-200">
-                                  <div className="h-full rounded-full bg-green-500" style={{ width: "80%" }} />
+                                  <div className={"h-full rounded-full " +
+                                    cn(buyer.status=='Sold' && 'bg-blue-500 w-full', 
+                                      buyer.status == 'Final Paperwork' && 'bg-green-500 w-[80%]', 
+                                      buyer.status=='Showing' && 'bg-yellow-500 w-[60%]',
+                                       buyer.status=='First Contact' && 'bg-red-500 w-[40%]')
+                                  }/>
                                 </div>
                               </td>
                               <td className="px-4 py-3 text-black">
@@ -486,8 +547,7 @@ export default function Component() {
           </div>
         </div>
       </div>
-      
-    </>
+    </div>
   )
 }
 
