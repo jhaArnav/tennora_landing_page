@@ -8,8 +8,35 @@ import { Label } from "../../components/ui/label";
 import { Input } from "../../components/ui/input";
 import { Textarea } from "../../components/ui/textarea";
 import { Button } from "../../components/ui/button";
+import { useState } from 'react';
 
 export default function ContactForm() {
+
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "71f62227-6ef8-4339-8160-a151363d0bb7");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="w-full border-t border-[#555]">
       <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
@@ -32,27 +59,27 @@ export default function ContactForm() {
                 <CardDescription>Fill out the form to request a live demo.</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="grid gap-4" action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="access key required!"/>
+                <form className="grid gap-4" onSubmit={onSubmit} method="POST">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
-                      <Input id="name" placeholder="John Doe" />
+                      <Input id="name" name='full_name' placeholder="John Doe" required/>
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="john@example.com" />
+                      <Input id="email" name="email" type="email" placeholder="john@example.com" required/>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="(123) 456-7890" />
+                    <Input id="phone" type="tel" name="phone_number" placeholder="(123) 456-7890" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
                       rows={4}
+                      name="description"
                       placeholder="Tell us a bit about your business and what you're looking for in a CRM."
                     />
                   </div>
