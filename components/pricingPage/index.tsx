@@ -19,9 +19,11 @@ const PricingPage = () => {
                 <div className="mt-16 mx-[15vw] grid gap-8 lg:grid-cols-2 lg:gap-x-8">
                 <div className="relative bg-white py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Individual</h2>
+                    
                     <p className="mt-4 text-sm text-gray-500">Perfect for small teams or individual agents.</p>
-                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$399</p>
-                    <p className="text-4xl font-extrabold text-gray-900">$179</p>
+                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$299</p>
+                    <p className="mt-2 text-base text-gray-900">Starting Offer:</p>
+                    <p className="text-4xl font-extrabold text-gray-900">$99</p>
                     <p className="mt-2 text-base text-gray-500">per month</p>
                     <ul className="mt-8 space-y-4">
                     <li className="flex items-center text-sm text-left text-gray-700">
@@ -89,8 +91,9 @@ const PricingPage = () => {
                 <div className="relative bg-white py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Enterprise</h2>
                     <p className="mt-4 text-sm text-gray-500">Best for large teams or agencies.</p>
-                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$3,199</p>
-                    <p className="text-4xl font-extrabold text-gray-900">$1,149</p>
+                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$1,499</p>
+                    <p className="mt-2 text-base text-gray-900">Starting Offer:</p>
+                    <p className="text-4xl font-extrabold text-gray-900">$499</p>
                     <p className="mt-2 text-base text-gray-500">per month</p>
                     <ul className="mt-8 space-y-4">
                     <li className="flex items-center text-sm text-gray-700">
