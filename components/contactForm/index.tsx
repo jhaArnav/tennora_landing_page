@@ -32,7 +32,8 @@ export default function ContactForm() {
                 <CardDescription>Fill out the form to request a live demo.</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="grid gap-4">
+                <form className="grid gap-4" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="access key required!"/>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>

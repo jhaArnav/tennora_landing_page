@@ -24,7 +24,7 @@ export default function NavBar() {
                     Demo
                 </Link>
                 <Link
-                    href="#"
+                    href="/pricing"
                     className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >

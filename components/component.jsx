@@ -11,12 +11,12 @@ import Footer from './footer';
 import Link from "next/link";
 
 import logo from "../pictures/logo.png";
-import listingImg from "../pictures/listing.jpeg";
-import workflowsImg from "../pictures/workflows.jpeg";
-import emailChainImg from "../pictures/emailChain.jpeg";
-import paperworkImg from "../pictures/paperwork.jpeg";
-import financialImg from "../pictures/financial.jpeg";
-import advertisementImg from "../pictures/advertisement.jpeg";
+import listingImg from '../pictures/listingPage.png';
+import leadsImg from '../pictures/leadsPage.png';
+import marketingImg from '../pictures/marketingPage.png';
+import schedulingImg from '../pictures/schedulingPage.png';
+import documentsImg from '../pictures/documentsPage.png';
+import financialImg from '../pictures/financial.jpeg';
 
 export default function Component() {
   return (
@@ -77,7 +77,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={workflowsImg.src}
+                src={leadsImg.src}
                 width="550"
                 height="310"
                 alt="Automated Workflows"
@@ -113,7 +113,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={emailChainImg.src}
+                src={schedulingImg.src}
                 width="550"
                 height="310"
                 alt="Communication Automation"
@@ -131,7 +131,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={paperworkImg.src}
+                src={documentsImg.src}
                 width="550"
                 height="310"
                 alt="Paperwork Management"
@@ -149,7 +149,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={advertisementImg.src}
+                src={marketingImg.src}
                 width="550"
                 height="310"
                 alt="Ad Campaign Integration"
