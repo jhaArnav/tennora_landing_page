@@ -17,7 +17,7 @@ export default function Component() {
       <main className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 p-6 lg:pb-10 h-full overflow-scroll bg-gray-300">
         <div className="bg-background rounded-lg shadow-lg">
           <div className="p-4 border-b flex items-center justify-between">
-            <h2 className="text-xl font-bold">Upcoming Meetings - Scheduling: Powered by Calendly</h2>
+            <h2 className="text-xl font-bold">Upcoming Meetings - Scheduling: Powered by Google</h2>
             <div className="flex items-center gap-2">
               <Button variant="outline" size="sm">
                 Day
