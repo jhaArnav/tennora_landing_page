@@ -9,6 +9,7 @@ import NavBar from "./navBar";
 import ContactForm from "./contactForm";
 import Footer from './footer';
 import Link from "next/link";
+import Head from "next/head";
 
 import logo from "../pictures/logo.png";
 import listingImg from '../pictures/listingPage.png';
@@ -21,6 +22,10 @@ import financialImg from '../pictures/financial.jpeg';
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
+      <Head>
+        <title>Tennora - Streamline Your Real Estate Business</title>
+        <link rel="icon" type="image/x-icon" href="../pictures/icon.png?" />
+      </Head>
       <NavBar />
       <main className="flex-1 flex-col items-center justify-center">
         <section className="flex flex-row justify-center items-center pt-14 w-full h-[100vh] bg-white">
