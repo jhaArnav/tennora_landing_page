@@ -10,10 +10,16 @@ import emilyDavis from '../../pictures/profile/emilyDavis.png';
 import davidWilson from '../../pictures/profile/davidWilson.png';
 import sophiaMartinez from '../../pictures/profile/sophiaMartinez.png';
 import danielGarcia from '../../pictures/profile/danielGarcia.png';
+import Head from "next/head";
+import icon from "../../pictures/icon.png";
 
 const TestimonialsPage = () => {
   return (
     <div className="flex flex-col flex-1 h-[100vh]">
+        <Head>
+            <title>Tennora Testimonials</title>
+            <link rel="icon" type="image/x-icon" href={icon.src} />
+        </Head>
         <NavBar/>
         <div className="bg-gray-50 py-20 px-6 sm:py-24 lg:px-8">
             <div className="max-w-7xl mx-auto text-center">

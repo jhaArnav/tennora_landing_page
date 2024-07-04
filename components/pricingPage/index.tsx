@@ -2,10 +2,16 @@ import React from 'react';
 import NavBar from '../navBar';
 import Footer from '../footer';
 import ContactForm from '../contactForm';
+import Head from "next/head";
+import icon from "../../pictures/icon.png";
 
 const PricingPage = () => {
   return (
     <div className="flex flex-col flex-1 h-[100vh]">
+        <Head>
+            <title>Tennora Pricing</title>
+            <link rel="icon" type="image/x-icon" href={icon.src} />
+        </Head>
         <NavBar/>
         <div className="bg-primary flex-1">
             <div className="bg-gray-50 py-20 px-6 sm:py-24 lg:px-8">

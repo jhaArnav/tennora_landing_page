@@ -9,11 +9,17 @@ import MarketingPage from './marketingPage/body';
 import { useState } from 'react';
 import ContactForm from '../contactForm';
 import Footer from '../footer';
+import Head from "next/head";
+import icon from "../../pictures/icon.png";
 
 export default function DemoBody() {
     const [page, setPage] = useState<any | null>("listings");
     return (
         <div>
+            <Head>
+                <title>Tennora Demo</title>
+                <link rel="icon" type="image/x-icon" href={icon.src} />
+            </Head>
             <LandingNavBar/>
             <div className="p-10 pt-24 h-[75vw] bg-gray-100 flex flex-col">
                 <div className="text-black py-8 px-6 text-center">
