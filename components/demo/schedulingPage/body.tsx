@@ -6,7 +6,7 @@
 import { Button } from "../../../components/ui/button"
 import { Avatar, AvatarImage, AvatarFallback } from "../../ui/avatar"
 
-import calendlyImg from './pictures/calendly2.png';
+import calendlyImg from './pictures/CalendarExample-1024x608.jpg';
 
 export default function Component() {
   return (
