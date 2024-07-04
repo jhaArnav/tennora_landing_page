@@ -33,7 +33,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Jessica Miller</h3>
-                    <p className="mt-2 text-base text-gray-600">Real Estate Agent</p>
+                    <p className="mt-2 text-base text-gray-600">Real Estate Agent, NJ</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "This CRM has been a game-changer for my business. The integrations with Google Ads and SEO tools have helped me reach more clients and close more deals!"
                     </p>
@@ -47,7 +47,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Alex Smith</h3>
-                    <p className="mt-2 text-base text-gray-600">Broker</p>
+                    <p className="mt-2 text-base text-gray-600">Broker, NY</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "Our team loves the email integration feature. It's made communication with clients so much easier and more efficient. Highly recommend!"
                     </p>
@@ -61,7 +61,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Sarah Lee</h3>
-                    <p className="mt-2 text-base text-gray-600">Agency Owner</p>
+                    <p className="mt-2 text-base text-gray-600">Broker & Owner, FL</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "The CRM's ability to integrate with Zillow has been incredible. Our listings get more visibility, and the automated processes save us so much time."
                     </p>
@@ -75,7 +75,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Michael Brown</h3>
-                    <p className="mt-2 text-base text-gray-600">Real Estate Investor</p>
+                    <p className="mt-2 text-base text-gray-600">Realtor, FL</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "The seamless integration with various tools has streamlined our workflow and significantly increased our productivity. Highly recommended!"
                     </p>
@@ -89,7 +89,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Emily Davis</h3>
-                    <p className="mt-2 text-base text-gray-600">Real Estate Consultant</p>
+                    <p className="mt-2 text-base text-gray-600">Real Estate Consultant, GA</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "Our sales team has seen a remarkable improvement in client management and lead conversion rates. This CRM is a must-have for any real-estate professional."
                     </p>
@@ -103,7 +103,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">David Wilson</h3>
-                    <p className="mt-2 text-base text-gray-600">Property Manager</p>
+                    <p className="mt-2 text-base text-gray-600">Real Estate Agent & Investor, NJ</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "The CRM's Zillow integration has helped us get more visibility for our listings, and the automated email campaigns have improved our client engagement."
                     </p>
@@ -117,7 +117,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Sophia Martinez</h3>
-                    <p className="mt-2 text-base text-gray-600">Realtor</p>
+                    <p className="mt-2 text-base text-gray-600">Realtor, GA</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "This CRM has transformed how we manage leads and interact with clients. The integration with SEO tools has significantly increased our online presence."
                     </p>
@@ -131,7 +131,7 @@ const TestimonialsPage = () => {
                     />
                     </div>
                     <h3 className="mt-4 text-lg font-medium text-gray-900">Daniel Garcia</h3>
-                    <p className="mt-2 text-base text-gray-600">Real Estate Developer</p>
+                    <p className="mt-2 text-base text-gray-600">Brokerage Consultant, NY</p>
                     <p className="mt-4 text-sm text-gray-700">
                     "We've seen a noticeable increase in efficiency and client satisfaction since we started using this CRM. The customizable features are perfect for our growing team."
                     </p>
