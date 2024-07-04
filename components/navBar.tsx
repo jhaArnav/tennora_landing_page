@@ -31,11 +31,11 @@ export default function NavBar() {
                     Pricing
                 </Link>
                 <Link
-                    href="#"
+                    href="/testimonials"
                     className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
-                    About
+                    Testimonials
                 </Link>
                 <Link
                     href="/contact"

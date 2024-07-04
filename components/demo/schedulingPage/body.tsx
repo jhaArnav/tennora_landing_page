@@ -12,9 +12,9 @@ export default function Component() {
   return (
     <div className="flex flex-col h-[calc(100%-56px)]">
       <header className="bg-primary text-primary-foreground px-4 lg:px-6 h-14 flex items-center">
-          <h1 className="text-xl font-semibold">Scheduling</h1>
-        </header>
-      <main className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 p-6 h-full overflow-scroll bg-gray-300">
+        <h1 className="text-xl font-semibold">Scheduling</h1>
+      </header>
+      <main className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-6 p-6 lg:pb-10 h-full overflow-scroll bg-gray-300">
         <div className="bg-background rounded-lg shadow-lg">
           <div className="p-4 border-b flex items-center justify-between">
             <h2 className="text-xl font-bold">Upcoming Meetings - Scheduling: Powered by Calendly</h2>

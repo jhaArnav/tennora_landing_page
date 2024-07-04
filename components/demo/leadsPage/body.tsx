@@ -472,7 +472,7 @@ export default function Component() {
         <h1 className="text-xl font-semibold">Leads</h1>
       </header>
       <div className="overflow-scroll flex-1">
-        <div className="px-4 py-8 bg-gray-300">
+        <div className="px-4 py-8 pb-10 bg-gray-300">
           <div className="space-y-8">
             {sellers.map((seller) => (
               <div key={seller.id} className="bg-white rounded-lg shadow-md">
