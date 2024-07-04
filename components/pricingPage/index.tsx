@@ -20,50 +20,51 @@ const PricingPage = () => {
                 <div className="relative bg-white py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Individual</h2>
                     <p className="mt-4 text-sm text-gray-500">Perfect for small teams or individual agents.</p>
-                    <p className="mt-8 text-4xl font-extrabold text-gray-900">$19</p>
+                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$399</p>
+                    <p className="text-4xl font-extrabold text-gray-900">$179</p>
                     <p className="mt-2 text-base text-gray-500">per month</p>
                     <ul className="mt-8 space-y-4">
-                    <li className="flex items-center text-sm text-gray-700">
+                    <li className="flex items-center text-sm text-left text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Workflow Automation - Listings, Leads, Scheduling, Documentations, Marketing
+                        Workflow Automation for Listings, Leads, Scheduling, and Documentation
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        AI Assisted Notes
+                        AI-Assisted Note-Taking
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                         Automatic Schedule Management via Calendly
+                        Automatic Schedule Management with Calendly
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Docusign Integration
+                        Integration with Docusign for Documents
+                    </li>
+                    <li className="flex items-center text-sm text-gray-700 text-left">
+                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        Integration with Email, Text, and Social Media Messaging
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Email, Texts, Social Media Messaging Integration
+                        Custom Integrations for Advertising Tools
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Custom Integrations for Advertisement Tools
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Automated Zillow and Redfin Ad Campaaigns
+                        Automated Campaigns on Zillow and Redfin
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -88,68 +89,15 @@ const PricingPage = () => {
                 <div className="relative bg-white py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Enterprise</h2>
                     <p className="mt-4 text-sm text-gray-500">Best for large teams or agencies.</p>
-                    <p className="mt-8 text-4xl font-extrabold text-gray-900">$99</p>
+                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$3,199</p>
+                    <p className="text-4xl font-extrabold text-gray-900">$1,149</p>
                     <p className="mt-2 text-base text-gray-500">per month</p>
                     <ul className="mt-8 space-y-4">
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
-                        Workflow Automation - Listings, Leads, Scheduling, Documentations, Marketing
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        AI Assisted Notes
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                         Automatic Schedule Management via Calendly
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Docusign Integration
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Email, Texts, Social Media Messaging Integration
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Custom Integrations for Advertisement Tools
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Automated Zillow and Redfin Ad Campaaigns
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        24/7 Hotline Support
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Dedicated Relationship Manager
-                    </li>
-                    <li className="flex items-center text-sm text-gray-700">
-                        <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8 15.414 4.293 11.707a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        Access to Beta Features
+                        All Individual Plan Features
                     </li>
                     <li className="flex items-center text-sm text-gray-700">
                         <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
