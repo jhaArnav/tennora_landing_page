@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../navBar';
 import Footer from '../footer';
+import ContactForm from '../contactForm';
 
 const PricingPage = () => {
   return (
@@ -176,6 +177,7 @@ const PricingPage = () => {
             </div>
             </div>
         </div>
+        <ContactForm/>
         <Footer/>
     </div>
       );

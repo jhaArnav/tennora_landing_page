@@ -15,8 +15,16 @@ export default function DemoBody() {
     return (
         <div>
             <LandingNavBar/>
-            <div className="p-10 pt-24 h-[60vw] bg-gray-100">
-                <div className="rounded-2xl border-black border-solid w-full h-full overflow-hidden shadow-xl">
+            <div className="p-10 pt-24 h-[75vw] bg-gray-100 flex flex-col">
+                <div className="text-black py-8 px-6 text-center">
+                    <h2 className="text-3xl font-extrabold">
+                        Experience Our System in Action!
+                    </h2>
+                    <p className="mt-4 text-lg">
+                        Dive into our live demo and see how our tools can transform your real-estate business. Interact with our features and witness the seamless integrations we offer!
+                    </p>
+                </div>
+                <div className="rounded-2xl border-black border-solid flex-1 overflow-hidden shadow-xl mt-10 mx-5">
                     <NavBar router={setPage}/>
                     <div className="w-full h-full">
                         {renderSwitch(page)}

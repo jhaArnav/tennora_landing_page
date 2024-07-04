@@ -14,7 +14,7 @@ export default function Component() {
         </header>
         <div className="overflow-scroll h-[calc(100%-56px)]">
           <div className="flex flex-col min-h-[100dvh] bg-gray-300">
-            <main className="flex-1 p-4 sm:p-8 md:p-10">
+            <main className="flex-1 p-4 sm:p-8 md:p-10 lg:pb-10">
               <div className="max-w-4xl mx-auto">
                 <div className="bg-background rounded-lg shadow-lg overflow-hidden">
                   <div className="p-6 sm:p-8 md:p-10">

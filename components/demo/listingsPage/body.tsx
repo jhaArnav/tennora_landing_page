@@ -23,7 +23,7 @@ export default function Component() {
         <h1 className="text-xl font-semibold">Listings</h1>
       </header>
       <div className="flex flex-col flex-1 overflow-scroll">
-      <div className="flex flex-col space-y-6 p-4 sm:p-6 md:p-8 bg-gray-300">
+      <div className="flex flex-col space-y-6 lg:p-10 sm:p-6 bg-gray-300">
         <div className="grid grid-cols-1 gap-6">
           <Card className="grid grid-cols-[1fr_2fr] rounded-lg shadow-lg">
             <div className="relative overflow-hidden rounded-l-lg">
