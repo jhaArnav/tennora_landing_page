@@ -3,8 +3,6 @@
  * @see https://v0.dev/t/GUTcjv4BuMf
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
 import NavBar from "./navBar";
 import ContactForm from "./contactForm";
 import Footer from './footer';
@@ -17,7 +15,7 @@ import leadsImg from '../pictures/leadsPage.png';
 import marketingImg from '../pictures/marketingPage.png';
 import schedulingImg from '../pictures/schedulingPage.png';
 import documentsImg from '../pictures/documentsPage.png';
-import financialImg from '../pictures/financial.jpeg';
+import notesImg from '../pictures/noteTaking.png';
 
 export default function Component() {
   return (
@@ -111,7 +109,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>
                   <p className="text-[#ccc]">
                     Tennora's AI analyzes market data and your client's preferences to generate personalized,
-                    high-performing listing content.
+                    high-performing listing content which you can control in one dashboard.
                   </p>
                 </div>
               </div>
@@ -126,10 +124,28 @@ export default function Component() {
               />
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Communication Automation</h3>
+                  <h3 className="text-xl font-bold">Scheduling Automation</h3>
                   <p className="text-[#ccc]">
-                    Tennora's AI-powered communication tools help you stay connected with clients, analyze
-                    conversations, and automate personalized outreach.
+                    Tennora's AI-powered communication and scheduling tools combine to help you stay connected with clients through
+                    automated scheduling and client outreach.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <img
+                src={notesImg.src}
+                width="550"
+                height="310"
+                alt="Automated Note Taking"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="grid gap-1">
+                  <h3 className="text-xl font-bold">Automated Note Taking</h3>
+                  <p className="text-[#ccc]">
+                    Tennora's AI-powered communication summary tools enable automatic note taking based on your conversations so that you
+                    can focus on your clients without missing any details.
                   </p>
                 </div>
               </div>
@@ -147,7 +163,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Paperwork Management</h3>
                   <p className="text-[#ccc]">
                     Tennora streamlines your paperwork process, from automatically generating documents to securely
-                    storing and sharing them with clients.
+                    storing and sharing them with clients with Docusign.
                   </p>
                 </div>
               </div>
@@ -157,33 +173,15 @@ export default function Component() {
                 src={marketingImg.src}
                 width="550"
                 height="310"
-                alt="Ad Campaign Integration"
+                alt="Marketing Integration"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
               />
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Ad Campaign Integration</h3>
+                  <h3 className="text-xl font-bold">Marketing Integration</h3>
                   <p className="text-[#ccc]">
-                    Tennora seamlessly integrates with your ad platforms, allowing you to manage and optimize your
+                    Tennora seamlessly integrates with marketing tools of your choice--from Google Ads and SEO Optimization, to email marketing and social media branding, allowing you to manage and optimize your
                     marketing campaigns from a single dashboard.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
-                src={financialImg.src}
-                width="550"
-                height="310"
-                alt="Financial Reporting"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Financial Reporting</h3>
-                  <p className="text-[#ccc]">
-                    Tennora's AI-powered financial reporting tools provide you with real-time insights into your
-                    business performance, helping you make informed decisions.
                   </p>
                 </div>
               </div>
