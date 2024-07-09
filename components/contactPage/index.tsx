@@ -11,6 +11,7 @@ export default function ContactBody() {
                 <title>Tennora - Contact Us | AI CRM for Real Estate Agents</title>
                 <link rel="icon" type="image/x-icon" href={icon.src} />
             </Head>
+            
             <NavBar/>
             <div className="bg-primary flex-1">
                 <ContactForm/>

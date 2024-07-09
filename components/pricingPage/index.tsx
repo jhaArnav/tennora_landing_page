@@ -12,6 +12,7 @@ const PricingPage = () => {
             <title>Tennora - Pricing | AI CRM for Real Estate Agents</title>
             <link rel="icon" type="image/x-icon" href={icon.src} />
         </Head>
+        
         <NavBar/>
         <div className="bg-primary flex-1">
             <div className="bg-gray-50 py-20 px-6 sm:py-24 lg:px-8">
