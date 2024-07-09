@@ -13,7 +13,7 @@ export default function ContactBody() {
             </Head>
             
             <NavBar/>
-            <div className="bg-primary flex-1">
+            <div className="bg-primary flex-1 pt-14">
                 <ContactForm/>
             </div>
             <Footer/>
