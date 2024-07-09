@@ -1,6 +1,8 @@
+// components/ui/navBar.tsx
 import React from 'react';
 import icon from "../../../pictures/icon.png";
 import NavButton from './navButton';
+import Link from 'next/link';
 
 const NavBar = ({ router }: {router?: (x: any)=>void}) => {
   return (
@@ -14,6 +16,9 @@ const NavBar = ({ router }: {router?: (x: any)=>void}) => {
       <NavButton onClick={()=>{if (router) {router("scheduling")}}}>SCHEDULING</NavButton>
       <NavButton onClick={()=>{if (router) {router("documents")}}}>DOCUMENTS</NavButton>
       <NavButton>ACCOUNT</NavButton>
+      <Link href="/privacy-policy">
+        <a className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]">Privacy Policy</a>
+      </Link>
     </div>
   );
 };
