@@ -17,7 +17,7 @@ export default function DemoBody() {
     return (
         <div>
             <Head>
-                <title>Tennora Demo</title>
+                <title>Tennora - Demo | AI CRM for Real Estate Agents</title>
                 <link rel="icon" type="image/x-icon" href={icon.src} />
             </Head>
             <LandingNavBar/>

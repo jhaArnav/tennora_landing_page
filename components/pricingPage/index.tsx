@@ -9,7 +9,7 @@ const PricingPage = () => {
   return (
     <div className="flex flex-col flex-1 h-[100vh]">
         <Head>
-            <title>Tennora Pricing</title>
+            <title>Tennora - Pricing | AI CRM for Real Estate Agents</title>
             <link rel="icon" type="image/x-icon" href={icon.src} />
         </Head>
         <NavBar/>
