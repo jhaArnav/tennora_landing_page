@@ -62,20 +62,20 @@ export default function ContactForm() {
                 <form className="grid gap-4" onSubmit={onSubmit} method="POST">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name" className="mr-2">Name</Label>
                       <Input id="name" name='full_name' placeholder="John Doe" required/>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email" className="mr-2">Email</Label>
                       <Input id="email" name="email" type="email" placeholder="john@example.com" required/>
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
+                    <Label htmlFor="phone" className="mr-2">Phone Number</Label>
                     <Input id="phone" type="tel" name="phone_number" placeholder="(123) 456-7890" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message" className="mr-2">Message</Label>
                     <Textarea
                       id="message"
                       rows={4}

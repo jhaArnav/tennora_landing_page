@@ -60,7 +60,7 @@ export default function Component() {
               <img
                 src={logo.src}
                 alt="Hero"
-                className="mx-auto aspect-square overflow-hidden object-cover rounded-xl lg:w-[75vh] sm:w-[50vh]"
+                className="mx-auto aspect-square object-cover overflow-hidden rounded-xl lg:w-[75vh] w-[30vh]"
               />
             </div>
           </div>
