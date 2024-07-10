@@ -16,9 +16,6 @@ const NavBar = ({ router }: {router?: (x: any)=>void}) => {
       <NavButton onClick={()=>{if (router) {router("scheduling")}}}>SCHEDULING</NavButton>
       <NavButton onClick={()=>{if (router) {router("documents")}}}>DOCUMENTS</NavButton>
       <NavButton>ACCOUNT</NavButton>
-      <Link href="/privacy-policy">
-        <a className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]">Privacy Policy</a>
-      </Link>
     </div>
   );
 };

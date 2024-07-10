@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link'
 import Head from 'next/head';
 import NavBar from '../components/navBar'; // Adjust the path based on your folder structure
+import Footer from '../components/footer';
 
 const PrivacyPolicy = () => {
   return (
@@ -12,7 +13,7 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Privacy Policy of Tennora" />
       </Head>
       <NavBar />
-      <main className="flex-1 flex-col items-center justify-center px-6 py-12">
+      <main className="flex flex-col flex-1 items-center justify-center px-6 py-20 pb-12">
         <section className="container max-w-3xl">
           <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
           <p className="mb-4">
@@ -60,17 +61,7 @@ const PrivacyPolicy = () => {
           </p>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#555] bg-[#1a1a1a] text-white">
-        <p className="text-xs text-[#ccc]">&copy; 2024 Tennora. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="/privacy-policy" className="text-xs hover:underline underline-offset-4 text-[#ccc]">
-            Privacy
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4 text-[#ccc]">
-            Terms of Service
-          </Link>
-        </nav>
-      </footer>
+      <Footer/>
     </div>
   );
 }

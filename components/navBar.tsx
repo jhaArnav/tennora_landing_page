@@ -11,7 +11,7 @@ export default function NavBar() {
         }
     }, [])
     return (
-        <header className="absolute w-full px-4 lg:px-6 h-14 flex items-center justify-between border-b border-[#333] bg-[#1a1a1a] text-white sm:overflow-auto">
+        <header className="absolute w-full px-4 lg:px-6 h-14 flex items-center justify-between border-b border-[#333] bg-[#1a1a1a] text-white overflow-auto">
             {
                 windowWidth > 640 &&
                 <Link href="/" className="flex items-center justify-center" prefetch={false}>
@@ -22,38 +22,44 @@ export default function NavBar() {
             <nav className="flex gap-4 sm:gap-6">
                 <Link
                     href="/"
-                    className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Home
                 </Link>
                 <Link
                     href="/demo"
-                    className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Demo
                 </Link>
                 <Link
                     href="/pricing"
-                    className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Pricing
                 </Link>
                 <Link
                     href="/testimonials"
-                    className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Testimonials
                 </Link>
                 <Link
                     href="/contact"
-                    className="text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Contact
+                </Link>
+                <Link href="/privacy-policy"
+                    className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
+                    prefetch={false}
+                >
+                    Privacy Policy
                 </Link>
             </nav>
         </header>
