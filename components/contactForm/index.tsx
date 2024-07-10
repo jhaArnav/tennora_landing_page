@@ -30,11 +30,7 @@ export default function ContactForm() {
                 <CardDescription>Schedule a live demo with us.</CardDescription>
               </CardHeader>
               <CardContent>
-                <div
-                  className="calendly-inline-widget"
-                  data-url="https://calendly.com/arnav-jha-tennora/demo-call"
-                  style={{ minWidth: '320px', height: '630px' }}
-                ></div>
+                <CalendlyWidget />
               </CardContent>
             </Card>
           </div>
