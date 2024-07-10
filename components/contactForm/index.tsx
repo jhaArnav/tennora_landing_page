@@ -15,19 +15,17 @@ export default function ContactForm() {
       </Head>
       <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Request a Live Demo
-                </h1>
-                <p className="max-w-[600px] text-primary-foreground/80 md:text-xl">
-                  Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
-                </p>
-              </div>
+          <div className="space-y-4">
+            <div className="space-y-2 text-center">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Request a Live Demo
+              </h1>
+              <p className="max-w-[600px] mx-auto text-primary-foreground/80 md:text-xl">
+                Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
+              </p>
             </div>
             <Card className="bg-primary-foreground text-primary shadow-lg">
-              <CardHeader>
+              <CardHeader className="text-center">
                 <CardTitle>Contact Us</CardTitle>
                 <CardDescription>Schedule a live demo with us.</CardDescription>
               </CardHeader>
