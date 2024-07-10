@@ -59,7 +59,7 @@ export default function NavBar() {
                     className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
-                    Privacy Policy
+                    Privacy
                 </Link>
             </nav>
         </header>

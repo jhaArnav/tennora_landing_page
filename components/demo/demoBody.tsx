@@ -26,8 +26,14 @@ export default function DemoBody() {
                     <h2 className="text-3xl font-extrabold">
                         Experience Our System in Action!
                     </h2>
+                    <h3 className="text-2xl font-black">
+                        Note: Please View on a Laptop or Desktop. Mobile Version may distort the layout.
+                    </h3>
                     <p className="mt-4 text-lg">
                         Dive into our live demo and see how our tools can transform your real-estate business. Interact with our features and witness the seamless integrations we offer!
+                    </p>
+                    <p className="mt-3 text-lg">
+                        This is a demo version of the Software Experience and UI. Some functionalities are not shown in this demo. 
                     </p>
                 </div>
                 <div className="rounded-2xl border-black border-solid flex-1 overflow-hidden shadow-xl mt-10 mx-5">
