@@ -13,9 +13,9 @@ export default function ContactForm() {
         <title>Tennora | AI CRM for Real Estate Agents</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
-      <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
+      <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32 flex align-center justify-center">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col space-y-4 items-center">
+          <div className="flex flex-col space-y-4 items-center justify-center">
             <div className="text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Request a Live Demo
