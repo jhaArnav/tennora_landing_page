@@ -13,29 +13,27 @@ export default function ContactForm() {
         <title>Tennora | AI CRM for Real Estate Agents</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
-      <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32 flex flex-col items-center">
-        <div className="container px-4 md:px-6 text-center">
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Request a Live Demo
-            </h1>
-            <p className="max-w-[600px] text-primary-foreground/80 md:text-xl mx-auto">
-              Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
-            </p>
+      <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col space-y-4 items-center">
+            <div className="text-center">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Request a Live Demo
+              </h1>
+              <p className="max-w-[600px] text-primary-foreground/80 md:text-xl mx-auto">
+                Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
+              </p>
+            </div>
+            <Card className="bg-primary-foreground text-primary shadow-lg w-full max-w-5xl">
+              <CardHeader className="text-center">
+                <CardTitle>Contact Us</CardTitle>
+                <CardDescription>Schedule a live demo with us.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <CalendlyWidget />
+              </CardContent>
+            </Card>
           </div>
-          <Card className="bg-primary-foreground text-primary shadow-lg w-full max-w-5xl">
-            <CardHeader className="text-center">
-              <CardTitle>Contact Us</CardTitle>
-              <CardDescription>Schedule a live demo with us.</CardDescription>
-            </CardHeader>
-            <CardContent className="flex justify-center">
-              <div
-                className="calendly-inline-widget"
-                data-url="https://calendly.com/arnav-jha-tennora/demo-call"
-                style={{ width: '100%', height: '630px' }}
-              ></div>
-            </CardContent>
-          </Card>
         </div>
       </section>
     </div>
