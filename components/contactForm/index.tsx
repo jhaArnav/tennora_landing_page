@@ -4,7 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 
 // Dynamically import the Calendly inline widget component with no SSR
-const CalendlyWidget = dynamic(() => import('../../components/CalendlyWidget'), { ssr: false });
+const CalendlyWidget = dynamic(() => import('../calendlyWidget'), { ssr: false });
 
 export default function ContactForm() {
   return (
