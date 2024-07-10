@@ -1,18 +1,16 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../../components/ui/card";
-import React, { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+import React from 'react';
 import Head from 'next/head';
 
+// Dynamically import the Calendly inline widget component with no SSR
+const CalendlyWidget = dynamic(() => import('../../components/CalendlyWidget'), { ssr: false });
+
 export default function ContactForm() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <div className="w-full border-t border-[#555]">
       <Head>
-        <title>Request a Live Demo</title>
+        <title>Tennora | AI CRM for Real Estate Agents</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
       <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
@@ -34,13 +32,7 @@ export default function ContactForm() {
                 <CardDescription>Schedule a live demo with us.</CardDescription>
               </CardHeader>
               <CardContent>
-                {mounted && (
-                  <div
-                    className="calendly-inline-widget"
-                    data-url="https://calendly.com/arnav-jha-tennora/demo-call"
-                    style={{ minWidth: '320px', height: '630px' }}
-                  ></div>
-                )}
+                <CalendlyWidget />
               </CardContent>
             </Card>
           </div>
