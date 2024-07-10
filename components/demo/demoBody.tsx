@@ -26,7 +26,7 @@ export default function DemoBody() {
                     <h2 className="text-3xl font-extrabold">
                         Experience Our System in Action!
                     </h2>
-                    <h3 className="text-2xl font-black">
+                    <h3 className="text-xl font-normal mt-4">
                         Note: Please View on a Laptop or Desktop. Mobile Version may distort the layout.
                     </h3>
                     <p className="mt-4 text-lg">
