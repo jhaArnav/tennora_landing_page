@@ -8,12 +8,12 @@ const CalendlyWidget = dynamic(() => import('../calendlyWidget'), { ssr: false }
 
 export default function ContactForm() {
   return (
-    <div className="w-full border-t border-[#a8a7a7] bg-white">
+    <div className="w-full border-t border-[#555] bg-white">
       <Head>
         <title>Tennora | AI CRM for Real Estate Agents</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
-      <section className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32 flex align-center justify-center">
+      <section className="bg-white text-primary-foreground py-12 md:py-24 lg:py-32 flex align-center justify-center">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col space-y-4 items-center justify-center">
             <div className="text-center">
@@ -24,7 +24,7 @@ export default function ContactForm() {
                 Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
               </p>
             </div>
-            <Card className="bg-primary-foreground text-primary shadow-lg w-full max-w-5xl">
+            <Card className="bg-white text-primary shadow-lg w-full max-w-5xl">
               <CardHeader className="text-center">
                 <CardTitle>Contact Us</CardTitle>
                 <CardDescription>Schedule a live demo with us.</CardDescription>
