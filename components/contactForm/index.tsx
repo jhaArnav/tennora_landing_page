@@ -8,7 +8,7 @@ const CalendlyWidget = dynamic(() => import('../calendlyWidget'), { ssr: false }
 
 export default function ContactForm() {
   return (
-    <div className="w-full border-t border-[#fff]">
+    <div className="w-full border-t border-[#a8a7a7] bg-white">
       <Head>
         <title>Tennora | AI CRM for Real Estate Agents</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
