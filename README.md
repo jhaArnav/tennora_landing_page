@@ -73,4 +73,4 @@ I suggest adding these as aliases to your ~/.bashrc or ~/.zshrc (separate or tog
 ##### Run
 > docker run -it --rm --name="ubuntu-node" -v $DIR_REPO_PATH:/home/tennora -p 3000:3000 ubuntu-node
 ##### Example
-> alias tennora-run="cd $DIR_PATH && docker build . -t ubuntu-node && docker run -it --rm --name="ubuntu-node" -v ./tennora_landing_page/:/home/tennora -p 3000:3000 ubuntu-node && cd ~-"
+> alias tennora-run="cd $DIR_PATH && docker build . -t ubuntu-node && docker run -it --rm --name="ubuntu-node" -v $DIR_REPO_PATH:/home/tennora -p 3000:3000 ubuntu-node && cd ~-"
