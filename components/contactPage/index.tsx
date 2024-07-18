@@ -2,7 +2,7 @@ import ContactForm from '../contactForm';
 import NavBar from '../navBar';
 import Footer from '../footer';
 import Head from 'next/head';
-import icon from '../../pictures/icon.png';
+import icon from '../../public/logo.png';
 
 export default function ContactBody() {
     return (

@@ -3,7 +3,7 @@ import NavBar from '../navBar';
 import Footer from '../footer';
 import ContactForm from '../contactForm';
 import Head from "next/head";
-import icon from "../../pictures/icon.png";
+import icon from "../../public/logo.png";
 
 const PricingPage = () => {
   return (
