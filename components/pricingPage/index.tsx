@@ -24,7 +24,7 @@ const PricingPage = () => {
                 One Plan. No hidden fees, No Surprises.
                 </p>
                 <div className="mt-16 mx-auto grid gap-8 lg:grid-cols-1 lg:gap-x-8">
-                <div className="relative bg-white py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
+                <div className="relative bg-white py-8 px-6 border border-gray-50 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Individual</h2>
                     <p className="mt-4 text-sm text-gray-500">Perfect for small teams or individual agents.</p>
                     <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$299</p>
