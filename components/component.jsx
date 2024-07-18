@@ -69,7 +69,7 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="flex flex-col items-center space-y-2">
-                <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div>
+                {/* <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div> */}
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 Provide Fast, Accurate Mortgage Scenarios using Tennora's Tools 
                 </h2>
