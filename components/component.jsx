@@ -11,18 +11,18 @@ import Head from "next/head";
 
 import logo from "../pictures/logo.png";
 import icon from "../pictures/icon.png";
-import listingImg from '../pictures/listingPage.png';
-import leadsImg from '../pictures/leadsPage.png';
-import marketingImg from '../pictures/marketingPage.png';
-import schedulingImg from '../pictures/schedulingPage.png';
-import documentsImg from '../pictures/documentsPage.png';
-import notesImg from '../pictures/noteTaking.png';
+// import listingImg from '../pictures/listingPage.png';
+// import leadsImg from '../pictures/leadsPage.png';
+// import marketingImg from '../pictures/marketingPage.png';
+// import schedulingImg from '../pictures/schedulingPage.png';
+// import documentsImg from '../pictures/documentsPage.png';
+// import notesImg from '../pictures/noteTaking.png';
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
       <Head>
-        <title>Tennora - Streamline Your Real Estate Business</title>
+        <title>Tennora - Precision Tools for Every Loan Officer</title>
         <link rel="icon" type="image/x-icon" href={icon.src} />
       </Head>
       <NavBar />
@@ -33,11 +33,11 @@ export default function Component() {
               <div className="flex flex-col justify-center space-y-4 sm:items-center sm:text-center lg:text-left lg:items-start">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Streamline Your Real Estate Business with Tennora
+                  Simplify Pre-Approvals and Faster Calculations as a Loan Officer using Tennora
                   </h1>
                   <p className="max-w-[600px] text-[#333] md:text-xl">
-                    Tennora is an AI-powered all-in-one tool that automates your real estate workflows, from lead
-                    generation to client communication and financial reporting.
+                  Tennora enables Loan Officers to streamline their closing process from detailed pre-approval checks to 
+                  complex financial calculations and scenario plannin — all in one place, in seconds.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -80,13 +80,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={leadsImg.src}
                 width="550"
                 height="310"
                 alt="Automated Workflows"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Automated Workflows</h3>
@@ -98,13 +98,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={listingImg.src}
                 width="550"
                 height="310"
                 alt="Intelligent Listing Generation"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>
@@ -116,13 +116,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={schedulingImg.src}
                 width="550"
                 height="310"
                 alt="Communication Automation"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Scheduling Automation</h3>
@@ -134,13 +134,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={notesImg.src}
                 width="550"
                 height="310"
                 alt="Automated Note Taking"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Automated Note Taking</h3>
@@ -152,13 +152,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={documentsImg.src}
                 width="550"
                 height="310"
                 alt="Paperwork Management"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Paperwork Management</h3>
@@ -170,13 +170,13 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              {/* <img
                 src={marketingImg.src}
                 width="550"
                 height="310"
                 alt="Marketing Integration"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              />
+              /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Marketing Integration</h3>
