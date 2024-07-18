@@ -75,7 +75,7 @@ export default function Component() {
                 </h2>
                 <p className="max-w-[900px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Tennora's comprehensive suite of tools provide illustrations of pre-approvals, closing and monthly costs, and eligible income, 
-                  for virtually every scenario and mortgage type. Additionally, the ability to share options with one click.
+                  for virtually every scenario and mortgage type.
                 </p>
               </div>
             </div>
@@ -91,8 +91,8 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Pre-Approvals</h3>
                   <p className="text-[#ccc]">
-                    Tennora accurately estimates the pre-approval limits for a buyer with a given D/I Ratio, 
-                    providing illustrations of excess and deficits, and suggestions to improve eligibilty.
+                    Tennora accurately estimates pre-approvals for a buyer, providing illustrations of excess and deficits, 
+                    and suggestions to improve eligibilty.
                   </p>
                 </div>
               </div>
@@ -109,8 +109,8 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Multiple Mortgage Types</h3>
                   <p className="text-[#ccc]">
-                    Tennora's estimations work across all major mortgage types, including FHA, HTH, VA, and Conventional, providing detailed 
-                    calculations of MI, Closing Costs, and total monthly costs.
+                    Tennora's estimations work across all major mortgage types, providing detailed 
+                    calculations of MI, Closing Costs, and total monthly costs to buyers.
                   </p>
                 </div>
               </div>
@@ -145,8 +145,8 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Access to Realtors and Buyers</h3>
                   <p className="text-[#ccc]">
-                    Tennora's tools enable Loan Officers to provide unlimited scenarios to buyers and realtors, enabling them to try out the best options for their needs
-                    beforehand. Whether dynamic, or simple option lists, you have full access to what and when they see.
+                    Tennora enables Loan Officers to provide unlimited scenarios to buyers and realtors within a few seconds. 
+                    Additionally, the ability to share dynamic or static option lists, and full access to their usage.
                   </p>
                 </div>
               </div>
@@ -163,8 +163,8 @@ export default function Component() {
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Income and Deadline Calculations</h3>
                   <p className="text-[#ccc]">
-                    Tennora enables you to calculate eligible income for non-trditional salaries, including hourly, weekly, fixed term, and PnL calculations.
-                    Additionally, Tennora provides detailed calculations of deadlines for various stages of each mortgage closing process.
+                    Tennora calculates eligible income for non-trditional salaries - hourly, weekly, fixed term, or PnL.
+                    Additionally, Tennora provides the important dates for the mortgage closing processes.
                   </p>
                 </div>
               </div>
@@ -179,9 +179,9 @@ export default function Component() {
               /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Clean, Easy to navigate UI</h3>
+                  <h3 className="text-xl font-bold">Clean, Easy to Navigate UI</h3>
                   <p className="text-[#ccc]">
-                    Tennora offers you a seamless experience with a no-clutter interface. Easy to calculate, navigate, and send estimates within a few clicks
+                    All the above mentioned features, with a seamless experience and no-clutter interface. Easy to use with just a few clicks
                   </p>
                 </div>
               </div>
