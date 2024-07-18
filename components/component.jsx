@@ -9,8 +9,8 @@ import Footer from './footer';
 import Link from "next/link";
 import Head from "next/head";
 
-// import logo from "../pictures/logo.png";
-// import icon from "../pictures/icon.png";
+import logo from "../public/logo.png";
+import icon from "../public/logo.png";
 // import listingImg from '../pictures/listingPage.png';
 // import leadsImg from '../pictures/leadsPage.png';
 // import marketingImg from '../pictures/marketingPage.png';
