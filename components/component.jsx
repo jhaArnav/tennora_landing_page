@@ -71,11 +71,11 @@ export default function Component() {
               <div className="flex flex-col items-center space-y-2">
                 <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Provide Fast, Accurate Mortgage Scenarios using Tennora's Simulation Tools 
+                Provide Fast, Accurate Mortgage Scenarios using Tennora's Tools 
                 </h2>
                 <p className="max-w-[900px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Tennora's comprehensive suite of tools provide estimates of pre-approvals, closing costs, income estimator, monthly costs to buyers, across 
-                  various scenarios, for virtually every mortgage type. Share with the buyer or realtor with one click, and be notified of any changes.
+                  Tennora's comprehensive suite of tools provide illustrations of pre-approvals, closing and monthly costs, and eligible income, 
+                  for virtually every scenario and mortgage type. Additionally, the ability to share options with one click.
                 </p>
               </div>
             </div>
