@@ -1,4 +1,4 @@
-import icon from "../pictures/icon.png";
+import icon from "../public/logo.png";
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -27,13 +27,17 @@ export default function NavBar() {
                 >
                     Home
                 </Link>
-                <Link
+
+
+                {/* <Link
                     href="/demo"
                     className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Demo
-                </Link>
+                </Link> */}
+
+
                 <Link
                     href="/pricing"
                     className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
@@ -41,13 +45,17 @@ export default function NavBar() {
                 >
                     Pricing
                 </Link>
-                <Link
+
+
+                {/* <Link
                     href="/testimonials"
                     className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"
                     prefetch={false}
                 >
                     Testimonials
-                </Link>
+                </Link> */}
+
+                
                 <Link
                     href="/contact"
                     className="flex items-center text-sm font-medium hover:underline underline-offset-4 text-[#ccc]"

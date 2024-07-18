@@ -9,7 +9,7 @@ import Footer from './footer';
 import Link from "next/link";
 import Head from "next/head";
 
-import logo from "../pictures/logo.png";
+import logo from "../public/logo.png";
 import icon from "../pictures/icon.png";
 import listingImg from '../pictures/listingPage.png';
 import leadsImg from '../pictures/leadsPage.png';
@@ -22,7 +22,7 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
       <Head>
-        <title>Tennora - Streamline Your Real Estate Business</title>
+        <title>Tennora - Loan Officer Software</title>
         <link rel="icon" type="image/x-icon" href={icon.src} />
       </Head>
       <NavBar />
@@ -33,7 +33,7 @@ export default function Component() {
               <div className="flex flex-col justify-center space-y-4 sm:items-center sm:text-center lg:text-left lg:items-start">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Streamline Your Real Estate Business with Tennora
+                    Speed Up Mortgage Underwriting
                   </h1>
                   <p className="max-w-[600px] text-[#333] md:text-xl">
                     Tennora is an AI-powered all-in-one tool that automates your real estate workflows, from lead
