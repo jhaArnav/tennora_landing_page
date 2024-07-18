@@ -33,11 +33,11 @@ export default function Component() {
               <div className="flex flex-col justify-center space-y-4 sm:items-center sm:text-center lg:text-left lg:items-start">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Simplify Pre-Approvals and Faster Calculations as a Loan Officer using Tennora
+                  Close More Loans, Faster: with Tennora
                   </h1>
-                  <p className="max-w-[600px] text-[#333] md:text-xl">
-                  Tennora enables Loan Officers to streamline their closing process from detailed pre-approval checks to 
-                  complex financial calculations and scenario plannin — all in one place, in seconds.
+                  <p className="max-w-[600px] text-[#333] md:text-2xl">
+                  Tennora enables Loan Officers to streamline Mortgage Origination, from detailed pre-approval checks to 
+                  complex financial calculations and scenario planning — all in one place, in seconds.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -71,7 +71,7 @@ export default function Component() {
               <div className="flex flex-col items-center space-y-2">
                 <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Unlock the Power of AI in Your Real Estate Business
+                  Unlock the Power of Simulation to Provide Fast, Accurate Mortgage Scenarios
                 </h2>
                 <p className="max-w-[900px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Tennora's advanced AI capabilities streamline your workflows, boost productivity, and help you provide
