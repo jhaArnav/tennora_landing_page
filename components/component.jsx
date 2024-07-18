@@ -9,8 +9,8 @@ import Footer from './footer';
 import Link from "next/link";
 import Head from "next/head";
 
-import logo from "../pictures/logo.png";
-import icon from "../pictures/icon.png";
+// import logo from "../pictures/logo.png";
+// import icon from "../pictures/icon.png";
 // import listingImg from '../pictures/listingPage.png';
 // import leadsImg from '../pictures/leadsPage.png';
 // import marketingImg from '../pictures/marketingPage.png';
@@ -22,7 +22,7 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
       <Head>
-        <title>Tennora - Precision Tools for Every Loan Officer</title>
+        <title>Tennora - Precision Tools for Loan Officers</title>
         <link rel="icon" type="image/x-icon" href={icon.src} />
       </Head>
       <NavBar />
@@ -86,7 +86,7 @@ export default function Component() {
                 height="310"
                 alt="Automated Workflows"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              /> */}
+              />  */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Automated Workflows</h3>
@@ -104,7 +104,7 @@ export default function Component() {
                 height="310"
                 alt="Intelligent Listing Generation"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              /> */}
+              />  */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>

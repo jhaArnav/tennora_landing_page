@@ -1,4 +1,4 @@
-import icon from "../pictures/icon.png";
+import icon from "../public/logo.png";
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
