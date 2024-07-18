@@ -33,7 +33,7 @@ export default function Component() {
               <div className="flex flex-col justify-center space-y-4 sm:items-center sm:text-center lg:text-left lg:items-start">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Close More Loans, Faster: with Tennora
+                  Close More Loans, Faster, with Tennora
                   </h1>
                   <p className="max-w-[600px] text-[#333] md:text-2xl">
                   Tennora enables Loan Officers to streamline Mortgage Origination, from detailed pre-approval checks to 
@@ -71,11 +71,11 @@ export default function Component() {
               <div className="flex flex-col items-center space-y-2">
                 <div className="inline-block rounded-lg bg-[#333] px-3 py-1 text-sm">Key Features</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Unlock the Power of Simulation to Provide Fast, Accurate Mortgage Scenarios
+                Provide Fast, Accurate Mortgage Scenarios using Tennora's Simulation Tools 
                 </h2>
                 <p className="max-w-[900px] text-[#ccc] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Tennora's advanced AI capabilities streamline your workflows, boost productivity, and help you provide
-                  exceptional service to your clients.
+                  Tennora's comprehensive suite of tools provide estimates of pre-approvals, closing costs, income estimator, monthly costs to buyers, across 
+                  various scenarios, for virtually every mortgage type. Share with the buyer or realtor with one click, and be notified of any changes.
                 </p>
               </div>
             </div>
@@ -89,10 +89,10 @@ export default function Component() {
               />  */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Automated Workflows</h3>
+                  <h3 className="text-xl font-bold">Pre-Approvals</h3>
                   <p className="text-[#ccc]">
-                    Tennora's AI-powered automation streamlines your daily tasks, from lead management to client
-                    communication and paperwork processing.
+                    Tennora accurately estimates the pre-approval limits for a buyer with a given D/I Ratio, 
+                    providing illustrations of excess and deficits, and suggestions to improve eligibilty.
                   </p>
                 </div>
               </div>
@@ -107,10 +107,10 @@ export default function Component() {
               />  */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Intelligent Listing Generation</h3>
+                  <h3 className="text-xl font-bold">Multiple Mortgage Types</h3>
                   <p className="text-[#ccc]">
-                    Tennora's AI analyzes market data and your client's preferences to generate personalized,
-                    high-performing listing content which you can control in one dashboard.
+                    Tennora's estimations work across all major mortgage types, including FHA, HTH, VA, and Conventional, providing detailed 
+                    calculations of MI, Closing Costs, and total monthly costs.
                   </p>
                 </div>
               </div>
@@ -125,10 +125,10 @@ export default function Component() {
               /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Scheduling Automation</h3>
+                  <h3 className="text-xl font-bold">Scenario Simulation</h3>
                   <p className="text-[#ccc]">
-                    Tennora's AI-powered communication and scheduling tools combine to help you stay connected with clients through
-                    automated scheduling and client outreach.
+                    Tennora provides detailed estimates the monthly cost acorss varying Sale Price, Term of loan, Down Payment, Interest Rates, Discount points, and 
+                    many more factors.
                   </p>
                 </div>
               </div>
@@ -143,10 +143,10 @@ export default function Component() {
               /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Automated Note Taking</h3>
+                  <h3 className="text-xl font-bold">Access to Realtors and Buyers</h3>
                   <p className="text-[#ccc]">
-                    Tennora's AI-powered communication summary tools enable automatic note taking based on your conversations so that you
-                    can focus on your clients without missing any details.
+                    Tennora's tools enable Loan Officers to provide unlimited scenarios to buyers and realtors, enabling them to try out the best options for their needs
+                    beforehand. Whether dynamic, or simple option lists, you have full access to what and when they see.
                   </p>
                 </div>
               </div>
@@ -161,10 +161,10 @@ export default function Component() {
               /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Paperwork Management</h3>
+                  <h3 className="text-xl font-bold">Income and Deadline Calculations</h3>
                   <p className="text-[#ccc]">
-                    Tennora streamlines your paperwork process, from automatically generating documents to securely
-                    storing and sharing them with clients with Docusign.
+                    Tennora enables you to calculate eligible income for non-trditional salaries, including hourly, weekly, fixed term, and PnL calculations.
+                    Additionally, Tennora provides detailed calculations of deadlines for various stages of each mortgage closing process.
                   </p>
                 </div>
               </div>
@@ -179,10 +179,9 @@ export default function Component() {
               /> */}
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-1">
-                  <h3 className="text-xl font-bold">Marketing Integration</h3>
+                  <h3 className="text-xl font-bold">Clean, Easy to navigate UI</h3>
                   <p className="text-[#ccc]">
-                    Tennora seamlessly integrates with marketing tools of your choice--from Google Ads and SEO Optimization, to email marketing and social media branding, allowing you to manage and optimize your
-                    marketing campaigns from a single dashboard.
+                    Tennora offers you a seamless experience with a no-clutter interface. Easy to calculate, navigate, and send estimates within a few clicks
                   </p>
                 </div>
               </div>
