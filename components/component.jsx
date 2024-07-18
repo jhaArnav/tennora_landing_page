@@ -10,7 +10,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 import logo from "../public/logo.png";
-import icon from "../pictures/icon.png";
+import icon from "../public/logog.png";
 import listingImg from '../pictures/listingPage.png';
 import leadsImg from '../pictures/leadsPage.png';
 import marketingImg from '../pictures/marketingPage.png';
@@ -99,7 +99,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={listingImg.src}
+                src={logo.src}
                 width="550"
                 height="310"
                 alt="Intelligent Listing Generation"
@@ -117,7 +117,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={schedulingImg.src}
+                src={logo.src}
                 width="550"
                 height="310"
                 alt="Communication Automation"
@@ -135,7 +135,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={notesImg.src}
+                src={logo.src}
                 width="550"
                 height="310"
                 alt="Automated Note Taking"
@@ -153,7 +153,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={documentsImg.src}
+                src={logo.src}
                 width="550"
                 height="310"
                 alt="Paperwork Management"
@@ -171,7 +171,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                src={marketingImg.src}
+                src={logo.src}
                 width="550"
                 height="310"
                 alt="Marketing Integration"
