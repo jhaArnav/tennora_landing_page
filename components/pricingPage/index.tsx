@@ -25,8 +25,9 @@ const PricingPage = () => {
               One Plan. No hidden fees, No Surprises.
             </p>
             <div className="mt-16 mx-auto max-w-md bg-gray-200 py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
+            <p className="mt-2 text-base text-gray-900">Tennora's Monthly Subscription - Starting Offer:</p>
               <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$125</p>
-              <p className="mt-2 text-base text-gray-900">Starting Offer:</p>
+              
               <p className="text-4xl font-extrabold text-gray-900">$50</p>
               <p className="mt-2 text-base text-gray-500">per month</p>
               <ul className="mt-8 space-y-4 pl-8">
