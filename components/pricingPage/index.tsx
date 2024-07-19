@@ -19,7 +19,7 @@ const PricingPage = () => {
         <div className="bg-gray-50 py-20 px-6 sm:py-24 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl lg:text-6xl">
-              Simple, Transparent, No-Nonsense Pricing
+              Transparent, No-Nonsense Pricing
             </h1>
             <p className="mt-4 text-2xl text-gray-500">
               One Plan. No hidden fees, No Surprises.
