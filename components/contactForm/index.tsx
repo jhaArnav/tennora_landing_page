@@ -24,7 +24,7 @@ export default function ContactForm() {
                 Experience our powerful real estate CRM firsthand. Schedule a live demo with one of our experts.
               </p>
             </div>
-            <Card className="bg-white text-black shadow-lg w-full max-w-5xl">
+            <Card className="bg-gray-300 text-black shadow-lg w-full max-w-5xl">
               <CardHeader className="text-center">
                 <CardTitle>Contact Us</CardTitle>
                 <CardDescription>Schedule a live demo with us.</CardDescription>
