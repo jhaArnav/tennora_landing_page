@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tennora Website</title>
+        <title>Tennora | Faster Estimations for Loan Officers</title>
       </Head>
       <Component />
     </div>

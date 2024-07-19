@@ -8,7 +8,7 @@ export default function ContactBody() {
     return (
         <div className="flex flex-col flex-1 h-[100vh]">
             <Head>
-                <title>Tennora - Contact Us | AI CRM for Real Estate Agents</title>
+                <title>Tennora - Contact | Faster Estimations for Loan Officers</title>
                 <link rel="icon" type="image/x-icon" href={icon.src} />
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
             </Head>

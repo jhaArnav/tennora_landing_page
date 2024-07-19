@@ -10,7 +10,7 @@ export default function ContactForm() {
   return (
     <div className="w-full border-t border-[#555] bg-white">
       <Head>
-        <title>Tennora | AI CRM for Real Estate Agents</title>
+        <title>Tennora | Specialized Tools for Loan Officers</title>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
       </Head>
       <section className="bg-white text-black py-12 md:py-24 lg:py-32 flex align-center justify-center">

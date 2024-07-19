@@ -17,7 +17,7 @@ const TestimonialsPage = () => {
   return (
     <div className="flex flex-col flex-1 h-[100vh]">
         <Head>
-            <title>Tennora Testimonials</title>
+            <title>Tennora - Testimonials | Specialized Tools for Loan Officers</title>
             <link rel="icon" type="image/x-icon" href={icon.src} />
         </Head>
         <NavBar/>

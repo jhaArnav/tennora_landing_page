@@ -22,7 +22,7 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-[100vh]">
       <Head>
-        <title>Tennora - Specialized Tools for Loan Officers</title>
+        <title>Tennora | Faster Estimations for Loan Officers</title>
         <link rel="icon" type="image/x-icon" href={icon.src} />
       </Head>
       <NavBar />
