@@ -9,7 +9,7 @@ const PricingPage = () => {
   return (
     <div className="flex flex-col flex-1 h-[100vh]">
         <Head>
-            <title>Tennora - Pricing | AI CRM for Real Estate Agents</title>
+            <title>Tennora - Pricing | Specialized Tools for Loan Officers</title>
             <link rel="icon" type="image/x-icon" href={icon.src} />
         </Head>
         
@@ -26,9 +26,9 @@ const PricingPage = () => {
                 <div className="mt-16 mx-auto max-w-md bg-gray-200 py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
                     <h2 className="text-lg leading-6 font-medium text-gray-900">Individual</h2>
                     <p className="mt-4 text-sm text-gray-500">Perfect for small teams or individual agents.</p>
-                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$299</p>
+                    <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$129</p>
                     <p className="mt-2 text-base text-gray-900">Starting Offer:</p>
-                    <p className="text-4xl font-extrabold text-gray-900">$99</p>
+                    <p className="text-4xl font-extrabold text-gray-900">$49</p>
                     <p className="mt-2 text-base text-gray-500">per month</p>
                     <ul className="mt-8 space-y-4 pl-8">
                     <li className="flex items-center text-sm text-gray-900">
