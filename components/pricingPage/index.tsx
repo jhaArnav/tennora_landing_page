@@ -25,11 +25,11 @@ const PricingPage = () => {
               One Plan. No hidden fees, No Surprises.
             </p>
             <div className="mt-16 mx-auto max-w-md bg-gray-200 py-8 px-6 border border-gray-200 rounded-lg shadow-sm">
-            {/* <p className="mt-2 text-base text-gray-900">Tennora's Monthly Subscription - Starting Offer:</p>
-              <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$125</p>
+            <p className="mt-2 text-base text-gray-900">Tennora's Monthly Subscription:</p>
+              {/* <p className="mt-8 text-2xl font-extrabold text-gray-900/80 line-through">$125</p>
               
               <p className="text-4xl font-extrabold text-gray-900">$50</p>
-              <p className="mt-2 text-base text-gray-500">per month</p> */}
+              <p className="mt-2 text-base text-gray-500">per month</p>  */}
               <ul className="mt-8 space-y-4 pl-8">
                 <li className="flex items-center text-sm text-gray-900">
                   <svg className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
